@@ -9,7 +9,7 @@
 
 {% if faq_section != blank and faq_items != blank %}
   <section class="section-product-faq section-{{ section.id }}-padding {{ section.settings.color_scheme }}">
-    <div class="page-width">
+    <div class="section-product-faq__wrapper-narrow">
       <div class="section-product-faq__wrapper section-product-faq__wrapper--{{ section.settings.layout }}">
         {% if faq_heading != blank %}
           <div class="section-product-faq__header section-product-faq__header--{{ section.settings.heading_alignment }}">
@@ -120,6 +120,13 @@
       color: #ffffff;
     }
 
+    .section-product-faq__wrapper-narrow {
+      margin: 0 auto;
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+      max-width: 73.4rem;
+    }
+
     .section-product-faq__header {
       margin-bottom: 2.4rem;
     }
@@ -142,15 +149,15 @@
     }
 
     .section-product-faq__heading--small {
-      font-size: 2.8rem;
+      font-size: 1.8rem;
     }
 
     .section-product-faq__heading--medium {
-      font-size: 3.6rem;
+      font-size: 2.2rem;
     }
 
     .section-product-faq__heading--large {
-      font-size: 4.4rem;
+      font-size: 2.6rem;
     }
 
     .section-product-faq__wrapper--row .section-product-faq__content {
@@ -177,9 +184,9 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 2rem;
+      gap: 1.5rem;
       cursor: pointer;
-      padding: 2rem 2.4rem;
+      padding: 1.2rem 1.6rem;
     }
 
     .section-product-faq__summary::-webkit-details-marker {
@@ -187,7 +194,7 @@
     }
 
     .section-product-faq__question {
-      font-size: 1.7rem;
+      font-size: 1.4rem;
       line-height: 1.3;
       font-weight: 600;
     }
@@ -211,7 +218,7 @@
     }
 
     .section-product-faq__answer {
-      padding: 0 2.4rem 2rem;
+      padding: 0 1.6rem 1.2rem;
     }
 
     .section-product-faq__answer > *:first-child {
@@ -224,27 +231,27 @@
 
     @media screen and (max-width: 749px) {
       .section-product-faq__heading--small {
-        font-size: 2.2rem;
+        font-size: 1.6rem;
       }
 
       .section-product-faq__heading--medium {
-        font-size: 2.8rem;
-      }
-
-      .section-product-faq__heading--large {
-        font-size: 3.2rem;
-      }
-
-      .section-product-faq__summary {
-        padding: 1.8rem 2rem;
-      }
-
-      .section-product-faq__question {
         font-size: 1.8rem;
       }
 
+      .section-product-faq__heading--large {
+        font-size: 2rem;
+      }
+
+      .section-product-faq__summary {
+        padding: 1rem 1.4rem;
+      }
+
+      .section-product-faq__question {
+        font-size: 1.3rem;
+      }
+
       .section-product-faq__answer {
-        padding: 0 2rem 1.8rem;
+        padding: 0 1.4rem 1rem;
       }
     }
   </style>

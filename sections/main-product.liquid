@@ -38,6 +38,9 @@
       display: block;
     }
 
+    .product__text.caption-with-letter-spacing {
+      font-size: 19.8px;
+    }
   {%- endstyle -%}
 
   <script defer src="{{ 'product-form.min.js' | asset_url }}"></script>
@@ -377,49 +380,59 @@
               {{ block.settings.custom_liquid }}
               
             {%- when 'collapsible_tab' -%}
-              {%- assign product_faqs = product.metafields.custom.product_faq.value -%}
+              {%- assign why_choose_heading = product.metafields.custom.why_choose_this_bundle -%}
+              {%- assign why_choose_answer = product.metafields.custom.why_choose_this_bundle_answer_content -%}
+              {%- assign bundle_inclusion_heading = product.metafields.custom.bundle_inclusion_question -%}
+              {%- assign bundle_inclusion_answer = product.metafields.custom.bundle_inclusion_answer_content -%}
 
-              {%- if product_faqs != blank -%}
-                <div {{ block.shopify_attributes }}>
-                  {%- for faq in product_faqs -%}
-                    {%- assign faq_heading = faq.heading.value -%}
-                    {%- assign faq_icon_svg = faq.icon_svg.value -%}
-
-                    <div class="product__accordion accordion quick-add-hidden">
-                      <details id="Details-{{ block.id }}-{{ section.id }}-{{ forloop.index }}">
-                        <summary>
-                          <div class="summary__title">
-                            {%- if faq_icon_svg != blank -%}
-                              <span class="icon icon-accordion custom-accordion-icon" aria-hidden="true">
-                                {{ faq_icon_svg }}
-                              </span>
-                            {%- endif -%}
-
-                            {%- if faq_heading != blank -%}
-                              <h2 class="h4 accordion__title">
-                                {{ faq_heading }}
-                              </h2>
-                            {%- endif -%}
-                          </div>
-
-                          {% render 'icon-caret' %}
-                        </summary>
-
-                        <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}-{{ forloop.index }}">
-                          {%- if faq.content != blank -%}
-                            {{ faq.content | metafield_tag }}
-                          {%- endif -%}
-                        </div>
-                      </details>
+              {%- if why_choose_heading != blank and why_choose_answer != blank -%}
+                <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
+                  <details id="Details-{{ block.id }}-{{ section.id }}-why-choose">
+                    <summary>
+                      <div class="summary__title">
+                        <span class="icon icon-accordion custom-accordion-icon" aria-hidden="true">
+                          <svg class="icon icon-accordion color-foreground-text" aria-hidden="true" focusable="false" role="presentation" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 20 20"><path d="M9.56285 11.959C9.36021 11.959 9.19593 11.7947 9.19593 11.5921V11.4654C9.19266 10.9745 9.27959 10.5556 9.51194 10.162C9.73885 9.77751 10.0875 9.44653 10.5519 9.09905C10.9668 8.78804 11.2183 8.53255 11.3688 8.28844C11.5132 8.05415 11.577 7.80994 11.577 7.49433V7.48101C11.577 6.58737 10.9199 5.94963 10.0093 5.94963C9.14693 5.94963 8.48176 6.556 8.39691 7.55858C8.38999 7.64041 8.35581 7.71754 8.29986 7.77765L8.29366 7.78431C8.22548 7.85755 8.13034 7.89977 8.03028 7.90119L7.55903 7.90785C7.43278 7.90963 7.31449 7.84638 7.24586 7.7404C7.19061 7.65507 7.1738 7.55171 7.19715 7.45492C7.30916 5.93601 8.41577 4.74287 10.0217 4.74287C11.6246 4.74287 12.8131 5.91906 12.8131 7.46103V7.47435C12.8131 7.98614 12.6995 8.4388 12.4473 8.86135C12.199 9.27731 11.8283 9.64397 11.3455 10.0059L11.3431 10.0077C10.929 10.313 10.7058 10.5344 10.5791 10.746C10.4596 10.9455 10.4072 11.1677 10.4072 11.5174V11.5921C10.4072 11.7947 10.2429 11.959 10.0403 11.959H9.56285ZM10.7049 14.3815C10.7049 14.8554 10.3695 15.2613 9.86668 15.2613C9.36996 15.2613 9.02231 14.862 9.02231 14.3815C9.02231 13.9045 9.37305 13.5084 9.86668 13.5084C10.3665 13.5084 10.7049 13.911 10.7049 14.3815Z"></path>
+      <path d="M18.5 10C18.5 14.6944 14.6944 18.5 10 18.5C5.30558 18.5 1.5 14.6944 1.5 10C1.5 5.30558 5.30558 1.5 10 1.5C14.6944 1.5 18.5 5.30558 18.5 10ZM10 17.4967C14.1403 17.4967 17.4967 14.1403 17.4967 10C17.4967 5.85971 14.1403 2.50335 10 2.50335C5.85971 2.50335 2.50335 5.85971 2.50335 10C2.50335 14.1403 5.85971 17.4967 10 17.4967Z"></path></svg>
+                        </span>
+                        <h2 class="h4 accordion__title">
+                          {{ why_choose_heading }}
+                        </h2>
+                      </div>
+                      {% render 'icon-caret' %}
+                    </summary>
+                    <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}-why-choose">
+                      {{ why_choose_answer | metafield_tag }}
                     </div>
-                  {%- endfor -%}
+                  </details>
                 </div>
               {%- endif -%}
-              {%- assign product_faq = product.metafields.custom.product_faq.value -%}
 
-              {% comment %}
-                Original collapsible tab code kept for reference
+              {%- if bundle_inclusion_heading != blank and bundle_inclusion_answer != blank -%}
+                <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
+                  <details id="Details-{{ block.id }}-{{ section.id }}-inclusions">
+                    <summary>
+                      <div class="summary__title">
+                        <span class="icon icon-accordion custom-accordion-icon" aria-hidden="true">
+                          <svg class="icon icon-accordion color-foreground-text" aria-hidden="true" focusable="false" role="presentation" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 20 20"><path d="M18.9836 5.32852L14.6715 1.01638L1.01638 14.6715L5.32852 18.9836L18.9836 5.32852ZM15.3902 0.297691C14.9933 -0.0992303 14.3497 -0.0992303 13.9528 0.297691L0.297691 13.9528C-0.0992301 14.3497 -0.0992305 14.9932 0.297691 15.3902L4.60983 19.7023C5.00675 20.0992 5.65029 20.0992 6.04721 19.7023L19.7023 6.04721C20.0992 5.65029 20.0992 5.00675 19.7023 4.60983L15.3902 0.297691Z" fill-rule="evenodd"></path>
+      <path d="M11.7863 2.67056C11.9848 2.4721 12.3065 2.4721 12.505 2.67056L14.4237 4.58927C14.6222 4.78774 14.6222 5.1095 14.4237 5.30796C14.2252 5.50642 13.9035 5.50642 13.705 5.30796L11.7863 3.38925C11.5878 3.19079 11.5878 2.86902 11.7863 2.67056Z"></path>
+      <path d="M8.93891 5.36331C9.13737 5.16485 9.45914 5.16485 9.6576 5.36331L11.5763 7.28202C11.7748 7.48048 11.7748 7.80225 11.5763 8.00071C11.3779 8.19917 11.0561 8.19917 10.8576 8.00071L8.93891 6.082C8.74045 5.88354 8.74045 5.56177 8.93891 5.36331Z"></path>
+      <path d="M6.24307 8.20742C6.44153 8.00896 6.76329 8.00896 6.96175 8.20742L8.88047 10.1261C9.07893 10.3246 9.07893 10.6464 8.88047 10.8448C8.68201 11.0433 8.36024 11.0433 8.16178 10.8448L6.24307 8.92611C6.0446 8.72765 6.0446 8.40588 6.24307 8.20742Z"></path>
+      <path d="M3.37296 10.8776C3.57142 10.6791 3.89319 10.6791 4.09165 10.8776L6.01036 12.7963C6.20882 12.9948 6.20882 13.3165 6.01036 13.515C5.8119 13.7134 5.49013 13.7134 5.29167 13.515L3.37296 11.5963C3.1745 11.3978 3.1745 11.076 3.37296 10.8776Z"></path></svg>
+                        </span>
+                        <h2 class="h4 accordion__title">
+                          {{ bundle_inclusion_heading }}
+                        </h2>
+                      </div>
+                      {% render 'icon-caret' %}
+                    </summary>
+                    <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}-inclusions">
+                      {{ bundle_inclusion_answer | metafield_tag }}
+                    </div>
+                  </details>
+                </div>
+              {%- endif -%}
 
+              {%- if block.settings.heading != blank -%}
                 <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
                   <details id="Details-{{ block.id }}-{{ section.id }}">
                     <summary>
@@ -437,7 +450,7 @@
                     </div>
                   </details>
                 </div>
-              {% endcomment %}
+              {%- endif -%}
 
             {%- when 'quantity_selector' -%}
               <div
