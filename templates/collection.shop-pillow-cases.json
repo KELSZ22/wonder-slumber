@@ -1,0 +1,253 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Wonder_Slumber_Pillow_Cases.jpg",
+            "heading": "{{ collection.title }}",
+            "heading_size": "h1",
+            "subheading": "Upgrade your sleep experience with our premium pillowcases. Whether you choose the luxurious softness of silk or the breathable comfort of cotton, our pillowcases are designed for more restful nights! ",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 30,
+            "color_scheme": "background-2",
+            "text_alignment_mobile": "left"
+          }
+        }
+      },
+      "block_order": [
+        "slide"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "small",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "show_text_below": true,
+        "accessibility_info": ""
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 24,
+        "columns_desktop": 4,
+        "image_ratio": "portrait",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "1",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "c4cb02f0-1d64-451a-96d1-b11087375e6d": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16627542425843__c4cb02f0-1d64-451a-96d1-b11087375e6d-16652759486a5e7711-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Better Sleep",
+            "heading_size": "h2"
+          }
+        },
+        "template--16627542425843__c4cb02f0-1d64-451a-96d1-b11087375e6d-16652759486a5e7711-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Better Sleep leads to a <strong>good quality of life</strong>. Start each day feeling more refreshed!</p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "template--16627542425843__c4cb02f0-1d64-451a-96d1-b11087375e6d-16652759486a5e7711-0",
+        "template--16627542425843__c4cb02f0-1d64-451a-96d1-b11087375e6d-16652759486a5e7711-1"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Untitled_design_3865725f-a5f0-4f5e-add4-3a1b0b9d8467.png",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "accent-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "8cab9206-bea0-4e2b-98c4-bd2995bce120": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16627542425843__8cab9206-bea0-4e2b-98c4-bd2995bce120-16652759486a5e7711-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hypoallergenic",
+            "heading_size": "h2"
+          }
+        },
+        "template--16627542425843__8cab9206-bea0-4e2b-98c4-bd2995bce120-16652759486a5e7711-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Made with materials that are 1<strong>00% hypoallergenic</strong> to give you a <strong>sneeze-free sleep!</strong></p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "template--16627542425843__8cab9206-bea0-4e2b-98c4-bd2995bce120-16652759486a5e7711-0",
+        "template--16627542425843__8cab9206-bea0-4e2b-98c4-bd2995bce120-16652759486a5e7711-1"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/pexels-alex-green-5692264.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "accent-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "image-with-text-1": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ultimate Comfort and Luxury",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Premium fabrics made of <strong>high-quality materials that offer supreme comfort,</strong> resulting to a more luxurious sleeping experience.</p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/B2_WB_New_Sq_Photo.png",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "accent-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 12
+      }
+    },
+    "38c1a1b5-6bc5-41d9-aedc-3e8db842e5b7": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div data-id=\"60335a2adbecbc\"></div>",
+        "color_scheme": "background-1",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "99ed3323-c96d-47a3-a5fa-2fc23799acc3": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--16627542425843__99ed3323-c96d-47a3-a5fa-2fc23799acc3-166527582682d5fcb8-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where do you ship to and how long will it take before I receive my order?",
+            "icon": "none",
+            "row_content": "<p>We can ship nationwide! Delivery will takes 1-4 working days for Metro Manila orders and 3-8 working days for orders outside Metro Manila.</p>",
+            "page": ""
+          }
+        },
+        "template--16627542425843__99ed3323-c96d-47a3-a5fa-2fc23799acc3-166527582682d5fcb8-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is COD available?",
+            "icon": "none",
+            "row_content": "<p>Yes we accept COD, but it's not applicable for Pillow or Weighted Blanket orders outside of Metro Manila. </p>",
+            "page": ""
+          }
+        },
+        "template--16627542425843__99ed3323-c96d-47a3-a5fa-2fc23799acc3-166527582682d5fcb8-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Why choose Wonder Slumber?",
+            "icon": "none",
+            "row_content": "<p>We are committed to partnering with our innovative team and excellent suppliers to produce sustainable, comfortable, and quality products to deliver solutions anchored through the needs of the Filipinos.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16627542425843__99ed3323-c96d-47a3-a5fa-2fc23799acc3-166527582682d5fcb8-0",
+        "template--16627542425843__99ed3323-c96d-47a3-a5fa-2fc23799acc3-166527582682d5fcb8-1",
+        "template--16627542425843__99ed3323-c96d-47a3-a5fa-2fc23799acc3-166527582682d5fcb8-2"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "FAQs",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "row",
+        "color_scheme": "background-1",
+        "container_color_scheme": "accent-1",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 56
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "banner",
+    "product-grid",
+    "c4cb02f0-1d64-451a-96d1-b11087375e6d",
+    "8cab9206-bea0-4e2b-98c4-bd2995bce120",
+    "image-with-text-1",
+    "38c1a1b5-6bc5-41d9-aedc-3e8db842e5b7",
+    "99ed3323-c96d-47a3-a5fa-2fc23799acc3"
+  ]
+}

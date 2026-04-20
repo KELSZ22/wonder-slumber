@@ -1,0 +1,13 @@
+<div class="vertical-video-slideshow owl-carousel owl-theme">
+{% assign videos = "RB2ND7vLikw,SM90HKJrM2A,_cBA5ELhSvk,MOjPQs_sQuE,xIsLpqPeOts,1icJHqbM7Fk" | split: ',' %}
+  {% for video in videos %}
+    <div class="video-container">
+      <div class="video-wrapper">
+        <div class="video-content">
+          <iframe class="video-embed lazyload hs-id-073708fe" data-src="https://youtube.com/embed/{{ video }}">
+</iframe>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

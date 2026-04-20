@@ -1,0 +1,183 @@
+{%- unless product.has_only_default_variant -%}
+  <variant-radios
+    class="no-js-hidden bundle-options"
+    data-section="{{ section.id }}"
+    data-url="{{ product.url }}"
+  >
+    {%- for option in product.options_with_values -%}
+      <fieldset class="js">
+        <legend class="visually-hidden">{{ option.name }}</legend>
+
+        {%- for value in option.values -%}
+          <div class="bundle-card-wrapper">
+            <input
+              type="radio"
+              id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+              name="options[{{ option.name | escape }}]"
+              value="{{ value | escape }}"
+              form="{{ product_form_id }}"
+              class="custom-radio visually-hidden"
+              {% if option.selected_value == value %}
+                checked
+              {% endif %}
+            >
+
+            <label class="bundle-card" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+              <div class="bundle-card-inner">
+                <div class="bundle-radio">
+                  <span class="radio-indicator"></span>
+                </div>
+                <div class="bundle-image">
+                  <img src="{{ product.variants[forloop.index0].featured_image | img_url: '400x' }}" alt="{{ value }}">
+                </div>
+                <div class="bundle-details">
+                  <div class="bundle-text">
+                    <p class="bundle-title">{{ value }}</p>
+                    {% comment %} You can add metafields here like supply months if you want {% endcomment %}
+                    <!-- <p class="bundle-subtitle">(Supply info here if needed)</p> -->
+                    <div class="bundle-savings">
+                      <p class="compare-price">₱{{ product.variants[forloop.index0].compare_at_price | money_without_currency }}</p>
+                        {% assign original_price = product.variants[forloop.index0].compare_at_price %}
+                        {% assign sale_price = product.variants[forloop.index0].price %}
+                        
+                        {% if original_price > sale_price %}
+                          {% assign savings = original_price | minus: sale_price %}
+                          {% assign percent_off = savings | times: 100 | divided_by: original_price %}
+                          <p class="percent-off">{{ percent_off | round }}% OFF</p>
+                        {% endif %}
+                    </div>
+                    <p class="sale-price">now ₱{{ product.variants[forloop.index0].price | money_without_currency }}</p>
+                  </div>
+                </div>
+              </div>
+            </label>
+          </div>
+        {%- endfor -%}
+      </fieldset>
+    {%- endfor -%}
+
+    <script type="application/json">
+      {{ product.variants | json }}
+    </script>
+  </variant-radios>
+{%- endunless -%}
+
+
+<style>
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.bundle-options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bundle-card-wrapper {
+  position: relative;
+}
+
+.custom-radio:checked + .bundle-card .radio-indicator {
+  background-color: #0F4A66;
+  border-color: #0F4A66;
+}
+
+.bundle-card {
+  border: 2px solid #CDECF4;
+  border-radius: 12px;
+  padding: 16px;
+  background-color: #FAFEFF;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.bundle-card:hover {
+  border-color: #0F4A66;
+}
+
+.bundle-card-inner {
+  display: flex;
+  align-items: normal;
+  gap: 20px;
+}
+
+.bundle-image img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.bundle-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.bundle-radio {
+  display: flex;
+  align-items: normal;
+  justify-content: center;
+}
+
+.radio-indicator {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #CDECF4;
+  background-color: white;
+}
+
+.bundle-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.bundle-title {
+  font-size: 1em;
+  color: #0F4A66;
+  margin: 0;
+}
+
+.bundle-subtitle {
+  font-size: 0.9em;
+  color: #222222;
+}
+
+.compare-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 0.9em;
+  margin: 0;
+}
+
+.sale-price {
+  color: #0F4A66;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0;
+}
+  
+.percent-off{
+  background: #e53700;
+  color: white;
+  display: inline-block;
+  width: fit-content;
+  padding: 3px;
+  font-size: 10px;
+}
+.bundle-savings {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+</style>

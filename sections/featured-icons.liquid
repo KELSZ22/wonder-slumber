@@ -1,0 +1,454 @@
+{% comment %}
+  Feature Badges Section
+  Displays 5 feature badges with icons and descriptions
+  Responsive for mobile and desktop
+{% endcomment %}
+
+<section class="feature-badges-section page-width">
+  <div class="feature-badges-wrapper">
+    <div class="feature-badges-container">
+      
+      {% comment %} Badge 1: Free Shipping {% endcomment %}
+      <div class="feature-badge">
+        <div class="feature-badge__icon">
+          {% if section.settings.badge_1_image != blank %}
+            <img 
+              src="{{ section.settings.badge_1_image | img_url: 'master' }}" 
+              alt="{{ section.settings.badge_1_title }}"
+              loading="lazy"
+              width="80"
+              height="80"
+            >
+          {% else %}
+            <img 
+              src="https://placeholdit.com/80x80/dddddd/999999?text=icon" 
+              alt="Placeholder"
+              width="80"
+              height="80"
+            >
+          {% endif %}
+        </div>
+        <h3 class="feature-badge__title">{{ section.settings.badge_1_title }}</h3>
+        <p class="feature-badge__description">{{ section.settings.badge_1_description }}</p>
+      </div>
+
+      {% comment %} Badge 2: Average Rating {% endcomment %}
+      <div class="feature-badge">
+        <div class="feature-badge__icon">
+          {% if section.settings.badge_2_image != blank %}
+            <img 
+              src="{{ section.settings.badge_2_image | img_url: 'master' }}" 
+              alt="{{ section.settings.badge_2_title }}"
+              loading="lazy"
+              width="80"
+              height="80"
+            >
+          {% else %}
+            <img 
+              src="https://placeholdit.com/80x80/dddddd/999999?text=icon" 
+              alt="Placeholder"
+              width="80"
+              height="80"
+            >
+          {% endif %}
+        </div>
+        <h3 class="feature-badge__title">{{ section.settings.badge_2_title }}</h3>
+        <p class="feature-badge__description">{{ section.settings.badge_2_description }}</p>
+      </div>
+
+      {% comment %} Badge 3: Cash on Delivery {% endcomment %}
+      <div class="feature-badge">
+        <div class="feature-badge__icon">
+          {% if section.settings.badge_3_image != blank %}
+            <img 
+              src="{{ section.settings.badge_3_image | img_url: 'master' }}" 
+              alt="{{ section.settings.badge_3_title }}"
+              loading="lazy"
+              width="80"
+              height="80"
+            >
+          {% else %}
+            <img 
+              src="https://placeholdit.com/80x80/dddddd/999999?text=icon" 
+              alt="Placeholder"
+              width="80"
+              height="80"
+            >
+          {% endif %}
+        </div>
+        <h3 class="feature-badge__title">{{ section.settings.badge_3_title }}</h3>
+        <p class="feature-badge__description">{{ section.settings.badge_3_description }}</p>
+      </div>
+
+      {% comment %} Badge 4: 30 Night Trial {% endcomment %}
+      <div class="feature-badge">
+        <div class="feature-badge__icon">
+          {% if section.settings.badge_4_image != blank %}
+            <img 
+              src="{{ section.settings.badge_4_image | img_url: 'master' }}" 
+              alt="{{ section.settings.badge_4_title }}"
+              loading="lazy"
+              width="80"
+              height="80"
+            >
+          {% else %}
+            <img 
+              src="https://placeholdit.com/80x80/dddddd/999999?text=icon" 
+              alt="Placeholder"
+              width="80"
+              height="80"
+            >
+          {% endif %}
+        </div>
+        <h3 class="feature-badge__title">{{ section.settings.badge_4_title }}</h3>
+        <p class="feature-badge__description">{{ section.settings.badge_4_description }}</p>
+      </div>
+
+      {% comment %} Badge 5: Hypoallergenic {% endcomment %}
+      <div class="feature-badge">
+        <div class="feature-badge__icon">
+          {% if section.settings.badge_5_image != blank %}
+            <img 
+              src="{{ section.settings.badge_5_image | img_url: 'master' }}" 
+              alt="{{ section.settings.badge_5_title }}"
+              loading="lazy"
+              width="80"
+              height="80"
+            >
+          {% else %}
+            <img 
+              src="https://placeholdit.com/80x80/dddddd/999999?text=icon" 
+              alt="Placeholder"
+              width="80"
+              height="80"
+            >
+          {% endif %}
+        </div>
+        <h3 class="feature-badge__title">{{ section.settings.badge_5_title }}</h3>
+        <p class="feature-badge__description">{{ section.settings.badge_5_description }}</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .feature-badges-section {
+    padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;
+    background-color: {{ section.settings.background_color }};
+  }
+
+  .feature-badges-wrapper {
+    padding: 0 1rem;
+  }
+
+  .feature-badges-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .feature-badge {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 1 auto;
+  }
+
+  .feature-badge__icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .feature-badge__icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .feature-badge__title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+    color: {{ section.settings.title_color }};
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+  }
+
+  .feature-badge__description {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: {{ section.settings.description_color }};
+    margin: 0;
+    max-width: 200px;
+  }
+
+  /* Mobile Styles */
+  @media screen and (max-width: 749px) {
+    .feature-badges-container {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 1rem;
+      row-gap: 2rem;
+    }
+
+    .feature-badges-wrapper {
+      padding: 0 0.75rem;
+    }
+
+    /* First row - 3 badges */
+    .feature-badge:nth-child(1),
+    .feature-badge:nth-child(2),
+    .feature-badge:nth-child(3) {
+      grid-column: span 2;
+    }
+
+    /* Second row - 2 badges centered */
+    .feature-badge:nth-child(4) {
+      grid-column: 2 / span 2;
+    }
+
+    .feature-badge:nth-child(5) {
+      grid-column: 4 / span 2;
+    }
+
+    .feature-badge__icon {
+      width: 60px;
+      height: 60px;
+    }
+
+    .feature-badge__title {
+      font-size: 0.875rem;
+    }
+
+    .feature-badge__description {
+      font-size: 0.75rem;
+      max-width: 150px;
+    }
+  }
+
+  /* Desktop Styles */
+  @media screen and (min-width: 750px) {
+    .feature-badges-container {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .feature-badge {
+      flex: 1 1 0;
+      min-width: 0;
+      max-width: 240px;
+    }
+
+    .feature-badge__icon {
+      width: 100px;
+      height: 100px;
+    }
+
+    .feature-badge__title {
+      font-size: 1.25rem;
+    }
+
+    .feature-badge__description {
+      font-size: 0.9375rem;
+    }
+  }
+
+  /* Larger Desktop */
+  @media screen and (min-width: 1200px) {
+    .feature-badges-container {
+      gap: 3rem;
+    }
+
+    .feature-badge {
+      max-width: 260px;
+    }
+
+    .feature-badge__icon {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  /* Ensure 5 items stay in one row on desktop */
+  @media screen and (min-width: 750px) and (max-width: 1199px) {
+    .feature-badge {
+      flex: 1 1 18%;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Feature Badges",
+  "tag": "section",
+  "class": "feature-badges",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Settings"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title Color",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description Color",
+      "default": "#666666"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Top Padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Bottom Padding",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Badge 1 - Free Shipping"
+    },
+    {
+      "type": "image_picker",
+      "id": "badge_1_image",
+      "label": "Icon Image"
+    },
+    {
+      "type": "text",
+      "id": "badge_1_title",
+      "label": "Title",
+      "default": "FREE SHIPPING"
+    },
+    {
+      "type": "text",
+      "id": "badge_1_description",
+      "label": "Description",
+      "default": "No need to pay extra for order above P2500"
+    },
+    {
+      "type": "header",
+      "content": "Badge 2 - Average Rating"
+    },
+    {
+      "type": "image_picker",
+      "id": "badge_2_image",
+      "label": "Icon Image"
+    },
+    {
+      "type": "text",
+      "id": "badge_2_title",
+      "label": "Title",
+      "default": "AVERAGE RATING"
+    },
+    {
+      "type": "text",
+      "id": "badge_2_description",
+      "label": "Description",
+      "default": "Have helped over 5,000+ Filipinos sleep better"
+    },
+    {
+      "type": "header",
+      "content": "Badge 3 - Cash on Delivery"
+    },
+    {
+      "type": "image_picker",
+      "id": "badge_3_image",
+      "label": "Icon Image"
+    },
+    {
+      "type": "text",
+      "id": "badge_3_title",
+      "label": "Title",
+      "default": "CASH ON DELIVERY"
+    },
+    {
+      "type": "text",
+      "id": "badge_3_description",
+      "label": "Description",
+      "default": "No hassle mode of payment upon delivery"
+    },
+    {
+      "type": "header",
+      "content": "Badge 4 - 30 Night Trial"
+    },
+    {
+      "type": "image_picker",
+      "id": "badge_4_image",
+      "label": "Icon Image"
+    },
+    {
+      "type": "text",
+      "id": "badge_4_title",
+      "label": "Title",
+      "default": "30 NIGHT TRIAL"
+    },
+    {
+      "type": "text",
+      "id": "badge_4_description",
+      "label": "Description",
+      "default": "Return the item and we'll give a full refund in store credits"
+    },
+    {
+      "type": "header",
+      "content": "Badge 5 - Hypoallergenic"
+    },
+    {
+      "type": "image_picker",
+      "id": "badge_5_image",
+      "label": "Icon Image"
+    },
+    {
+      "type": "text",
+      "id": "badge_5_title",
+      "label": "Title",
+      "default": "HYPOALLERGENIC"
+    },
+    {
+      "type": "text",
+      "id": "badge_5_description",
+      "label": "Description",
+      "default": "Materials that will give you a sneeze-free sleep"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Feature Badges",
+      "category": "Trust"
+    }
+  ]
+}
+{% endschema %}

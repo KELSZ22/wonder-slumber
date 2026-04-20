@@ -1,0 +1,314 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 76
+      }
+    },
+    "5424077b-939e-4056-93f1-aad9c8455b96": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--16629616673011__5424077b-939e-4056-93f1-aad9c8455b96-16653295208e06c57f-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where do you ship to and how long will it take before I receive my order?",
+            "icon": "none",
+            "row_content": "<p>We can ship nationwide! </p><p>Delivery takes 1-4 working days for Metro Manila orders and 3-8 working days for orders outside Metro Manila.</p>",
+            "page": ""
+          }
+        },
+        "template--16629616673011__5424077b-939e-4056-93f1-aad9c8455b96-16653295208e06c57f-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is COD available? What are your other modes of payment?",
+            "icon": "none",
+            "row_content": "<p>Yes we accept COD, however it's not applicable for Wonder Pillow orders outside of Metro Manila. </p><p>We can also accept GCash, Maya, Credit & Debit Card, PayPal, and BPI Bank Transfer for a hassle-free online shopping. </p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16629616673011__5424077b-939e-4056-93f1-aad9c8455b96-16653295208e06c57f-0",
+        "template--16629616673011__5424077b-939e-4056-93f1-aad9c8455b96-16653295208e06c57f-1"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "FAQs",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "row",
+        "color_scheme": "background-1",
+        "container_color_scheme": "accent-1",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "22d11c55-434f-4d50-9e9c-9a2888634d94": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--16629616673011__22d11c55-434f-4d50-9e9c-9a2888634d94-16653295208e06c57f-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What makes the Wonder Pillow different from other pillows?",
+            "icon": "none",
+            "row_content": "<p>The Wonder Pillow features an orthopedic curved shape for neck and head support, reducing neck and back pain. Made of high-quality memory foam, it contours well and includes a thermoregulating gel pad to disperse heat, keeping you cool while sleeping.</p>",
+            "page": ""
+          }
+        },
+        "template--16629616673011__22d11c55-434f-4d50-9e9c-9a2888634d94-16653295208e06c57f-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does it work for back and side sleepers?",
+            "icon": "none",
+            "row_content": "<p>Yes, the Wonder Pillow features an innovative ergonomic design that adapts to your neck and head without requiring you to adjust your sleeping position. It provides support and comfort in any sleeping posture, making it suitable for everyone, including side, back, and stomach sleepers.</p>",
+            "page": ""
+          }
+        },
+        "template--16629616673011__22d11c55-434f-4d50-9e9c-9a2888634d94-16653295208e06c57f-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does it work for chronic neck pain?",
+            "icon": "none",
+            "row_content": "<p>Yes, the Wonder Pillow’s distinctive shape and design make it a perfect choice for individuals dealing with chronic neck pain. It supports the natural curve of the neck and spine, ensuring your head stays aligned with your back. This helps alleviate pressure on the spinal nerves, which can contribute to chronic pain.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16629616673011__22d11c55-434f-4d50-9e9c-9a2888634d94-16653295208e06c57f-0",
+        "template--16629616673011__22d11c55-434f-4d50-9e9c-9a2888634d94-16653295208e06c57f-1",
+        "template--16629616673011__22d11c55-434f-4d50-9e9c-9a2888634d94-16653295208e06c57f-2"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Wonder Pillow FAQs",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "row",
+        "color_scheme": "background-1",
+        "container_color_scheme": "accent-1",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "f856018c-a11e-483d-9b80-7603c8fe2317": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--16629616673011__f856018c-a11e-483d-9b80-7603c8fe2317-16653295208e06c57f-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does the Wonder Leg Pillow work for back and side sleepers?",
+            "icon": "none",
+            "row_content": "<p>Yes, the Wonder Leg Pillow is ideal for side sleepers, offering spinal and hip alignment when placed between the knees during sleep. However, back sleepers can also benefit by positioning it under their knees for extra support at night.</p>",
+            "page": ""
+          }
+        },
+        "template--16629616673011__f856018c-a11e-483d-9b80-7603c8fe2317-16653295208e06c57f-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "I've used many pillows for back and hip pain and remain doubtful. How can I be sure this one will be effective for me?",
+            "icon": "none",
+            "row_content": "<p>We're confident that the Wonder Leg Pillow is the best solution for hip pain relief and will improve your sleep, which is why we offer a 30-night risk-free trial. If you don't experience a noticeable difference within this period, you can return it for a full refund, no questions asked!</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16629616673011__f856018c-a11e-483d-9b80-7603c8fe2317-16653295208e06c57f-0",
+        "template--16629616673011__f856018c-a11e-483d-9b80-7603c8fe2317-16653295208e06c57f-1"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Leg Pillow FAQs",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "row",
+        "color_scheme": "background-1",
+        "container_color_scheme": "accent-1",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "93b6f24e-ec1e-48f0-aebb-e35e62bdffe9": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--16629616673011__93b6f24e-ec1e-48f0-aebb-e35e62bdffe9-16653295208e06c57f-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What are the benefits of using a 100% Blackout Sleep Mask like yours?",
+            "icon": "none",
+            "row_content": "<p>The absence of light sends a signal to your body’s sleep clock that it is time to rest, so using our sleep mask will help you fall asleep faster and deeper.</p>",
+            "page": ""
+          }
+        },
+        "template--16629616673011__93b6f24e-ec1e-48f0-aebb-e35e62bdffe9-16653295208e06c57f-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is the size adjustable? I am worried it won't fit me.",
+            "icon": "none",
+            "row_content": "<p>We know that every face shape is different, so the Wonder Sleep Mask has adjustable cups that can be moved closer together or farther apart to perfectly fit your face! The velcro strap that secures the mask can also be adjusted for a tighter or looser fit.</p>",
+            "page": ""
+          }
+        },
+        "template--16629616673011__93b6f24e-ec1e-48f0-aebb-e35e62bdffe9-16653295208e06c57f-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will this place pressure on my eyes or be uncomfortable while I try to sleep?",
+            "icon": "none",
+            "row_content": "<p>Absolutely not! In fact, it’s very comfortable. Made with 100% cotton and soft foam, the Wonder Sleep Mask offers breathable and comfortable wear to help you sleep even better.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_TM9wLa": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I wash my Wonder Sleep Mask?",
+            "icon": "none",
+            "row_content": "<p>You can gently hand wash your Wonder Sleep Mask and hang it to dry. Please DO NOT use the washing machine for your Wonder Sleep Mask as this may damage the fabric and foam.</p>",
+            "page": ""
+          }
+        },
+        "template--16629616673011__93b6f24e-ec1e-48f0-aebb-e35e62bdffe9-16653295208e06c57f-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will it work with eyelash extensions?",
+            "icon": "none",
+            "row_content": "<p>It depends on the length of your eyelash extensions. Our eye cups are about 0.10 cm deep, so most people shouldn’t experience any discomfort.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16629616673011__93b6f24e-ec1e-48f0-aebb-e35e62bdffe9-16653295208e06c57f-0",
+        "template--16629616673011__93b6f24e-ec1e-48f0-aebb-e35e62bdffe9-16653295208e06c57f-1",
+        "template--16629616673011__93b6f24e-ec1e-48f0-aebb-e35e62bdffe9-16653295208e06c57f-2",
+        "collapsible_row_TM9wLa",
+        "template--16629616673011__93b6f24e-ec1e-48f0-aebb-e35e62bdffe9-16653295208e06c57f-3"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Wonder Sleep Mask FAQs",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "row",
+        "color_scheme": "background-1",
+        "container_color_scheme": "accent-1",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "81831a55-2028-4d65-96f1-7ee83b79af1f": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--16629616673011__81831a55-2028-4d65-96f1-7ee83b79af1f-16653295208e06c57f-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do the products work to encourage calm and sleep?",
+            "icon": "none",
+            "row_content": "<p>When you inhale the aroma, it travels through the olfactory nerves and interacts with the limbic system, the brain region that influences your mood and mental state. Smell significantly impacts brain activity. The essential oils in the Deep Sleep Collection are carefully selected for their calming and relaxing effects on both the mind and body.</p>",
+            "page": ""
+          }
+        },
+        "template--16629616673011__81831a55-2028-4d65-96f1-7ee83b79af1f-16653295208e06c57f-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are your products natural?",
+            "icon": "none",
+            "row_content": "<p>All of our products contain natural ingredients without harsh chemicals. We use 100% natural fragrances and pure essential oils. Our formulations are free from alcohol, phthalates, sulfates, synthetic colors, fragrances, and parabens. </p>",
+            "page": ""
+          }
+        },
+        "template--16629616673011__81831a55-2028-4d65-96f1-7ee83b79af1f-16653295208e06c57f-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where are your products manufactured?",
+            "icon": "none",
+            "row_content": "<p>Our Deep Sleep Set Collection is produced <strong>locally</strong> at our <strong>FDA licensed manufacturing plant</strong> in Quezon City, so you can sleep peacefully knowing that all our products are <strong>thoughtfully crafted </strong>with your needs in mind.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_gJzd7E": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How to use the Deep Sleep Body Wash?",
+            "icon": "none",
+            "row_content": "<p>Massage all over the body while showering then rinse afterwards. </p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_AkywF8": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How to use the Deep Sleep Body Lotion?",
+            "icon": "none",
+            "row_content": "<p>Massage nightly all over the body right after showering to leave skin soft and smooth.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_97jTpj": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How to use the Deep Sleep Pillow Mist?",
+            "icon": "none",
+            "row_content": "<ol><li>Spray all over your pillow and linens.</li><li>Wait 1-2 minutes to allow the relaxing aromas to settle.</li><li>Sink into bed and breathe in our signature calming blend.</li></ol>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16629616673011__81831a55-2028-4d65-96f1-7ee83b79af1f-16653295208e06c57f-0",
+        "template--16629616673011__81831a55-2028-4d65-96f1-7ee83b79af1f-16653295208e06c57f-1",
+        "template--16629616673011__81831a55-2028-4d65-96f1-7ee83b79af1f-16653295208e06c57f-2",
+        "collapsible_row_gJzd7E",
+        "collapsible_row_AkywF8",
+        "collapsible_row_97jTpj"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Deep Sleep Collection FAQs",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "row",
+        "color_scheme": "background-1",
+        "container_color_scheme": "accent-1",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "5424077b-939e-4056-93f1-aad9c8455b96",
+    "22d11c55-434f-4d50-9e9c-9a2888634d94",
+    "f856018c-a11e-483d-9b80-7603c8fe2317",
+    "93b6f24e-ec1e-48f0-aebb-e35e62bdffe9",
+    "81831a55-2028-4d65-96f1-7ee83b79af1f"
+  ]
+}

@@ -1,0 +1,128 @@
+{% schema %}
+{
+  "name": "Wonder Slumber Comparison",
+  "tag": "section",
+  "class": "wonder-slumber-comparison-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "The Wonder Slumber® Pillow Works Perfectly For Side & Back Sleepers"
+    },
+    {
+      "type": "image_picker",
+      "id": "comparison_image",
+      "label": "Comparison Image"
+    },
+    {
+      "type": "text",
+      "id": "rating_text",
+      "label": "Rating Text",
+      "default": "⭐️⭐️⭐️⭐️⭐️ Rated 4.8 out of 5 by 11,401 happy customers"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "ADD TO CART →"
+    },
+    {
+      "type": "image_picker",
+      "id": "payment_icons",
+      "label": "Payment Icons Image"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#e6eff8"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Wonder Slumber Comparison"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="wonder-slumber-comparison-wrapper" style="background-color: {{ section.settings.background_color }};">
+  <div class="wonder-slumber-container">
+    <h2 class="wonder-slumber-heading">{{ section.settings.heading }}</h2>
+
+    {% if section.settings.comparison_image %}
+      <div class="wonder-slumber-image-wrapper">
+        <img src="{{ section.settings.comparison_image | image_url: width: 1200 }}" alt="Pillow Comparison" loading="lazy">
+      </div>
+    {% endif %}
+
+    <p class="wonder-slumber-rating">{{ section.settings.rating_text }}</p>
+
+    {% if section.settings.button_link != blank %}
+      <a href="{{ section.settings.button_link }}" class="wonder-slumber-btn">{{ section.settings.button_text }}</a>
+    {% endif %}
+
+    {% if section.settings.payment_icons %}
+      <div class="wonder-slumber-payments">
+        <img src="{{ section.settings.payment_icons | image_url: width: 400 }}" alt="Payment Methods" loading="lazy">
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+<style>
+  .wonder-slumber-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .wonder-slumber-heading {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+  }
+
+  .wonder-slumber-image-wrapper img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .wonder-slumber-rating {
+    font-size: 16px;
+    color: #1a1a1a;
+    margin: 20px 0;
+  }
+
+  .wonder-slumber-btn {
+    background-color: #e47979;
+    color: white;
+    padding: 16px 30px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 20px 0;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+
+  .wonder-slumber-btn:hover {
+    background-color: #cf5d5d;
+  }
+
+  .wonder-slumber-payments img {
+    height: 30px;
+    margin-top: 15px;
+    max-width: 100%;
+  }
+</style>

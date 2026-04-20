@@ -1,0 +1,253 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/pexels-ketut-subiyanto-4473807.jpg",
+            "heading": "{{ collection.title }}",
+            "heading_size": "h1",
+            "subheading": "Improve your day-to-day wellness by having a good night's sleep with our Sleep Essentials",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 30,
+            "color_scheme": "background-2",
+            "text_alignment_mobile": "left"
+          }
+        }
+      },
+      "block_order": [
+        "slide"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "small",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "show_text_below": true,
+        "accessibility_info": ""
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 24,
+        "columns_desktop": 4,
+        "image_ratio": "portrait",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "1",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "c4cb02f0-1d64-451a-96d1-b11087375e6d": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16627542425843__c4cb02f0-1d64-451a-96d1-b11087375e6d-16652759486a5e7711-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Better Sleep",
+            "heading_size": "h1"
+          }
+        },
+        "template--16627542425843__c4cb02f0-1d64-451a-96d1-b11087375e6d-16652759486a5e7711-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Better Sleep leads to a good quality of life. Start each day feeling more refreshed!</p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "template--16627542425843__c4cb02f0-1d64-451a-96d1-b11087375e6d-16652759486a5e7711-0",
+        "template--16627542425843__c4cb02f0-1d64-451a-96d1-b11087375e6d-16652759486a5e7711-1"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/pexels-ketut-subiyanto-4473863.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "accent-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "8cab9206-bea0-4e2b-98c4-bd2995bce120": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16627542425843__8cab9206-bea0-4e2b-98c4-bd2995bce120-16652759486a5e7711-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Designed for you",
+            "heading_size": "h1"
+          }
+        },
+        "template--16627542425843__8cab9206-bea0-4e2b-98c4-bd2995bce120-16652759486a5e7711-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Custom fit to your needs for a positive impact on how you snooze.</p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "template--16627542425843__8cab9206-bea0-4e2b-98c4-bd2995bce120-16652759486a5e7711-0",
+        "template--16627542425843__8cab9206-bea0-4e2b-98c4-bd2995bce120-16652759486a5e7711-1"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/15.png",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "accent-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "image-with-text-1": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hypoallergenic",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The last thing you want is to be sneezing when you’re trying to sleep!</p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/pexels-alex-green-5692264.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "accent-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 12
+      }
+    },
+    "38c1a1b5-6bc5-41d9-aedc-3e8db842e5b7": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div data-id=\"60335a2adbecbc\"></div>",
+        "color_scheme": "background-1",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "99ed3323-c96d-47a3-a5fa-2fc23799acc3": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--16627542425843__99ed3323-c96d-47a3-a5fa-2fc23799acc3-166527582682d5fcb8-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What are the benefits of using a 100% Blackout Sleep Mask?",
+            "icon": "none",
+            "row_content": "<p>The absence of light sends a signal to your body’s sleep clock that it is time to rest, so using our sleep mask will help you fall asleep faster and deeper.</p>",
+            "page": ""
+          }
+        },
+        "template--16627542425843__99ed3323-c96d-47a3-a5fa-2fc23799acc3-166527582682d5fcb8-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does the Wonder Leg Pillow work for back and side sleepers?",
+            "icon": "none",
+            "row_content": "<p>Yes, the Wonder Leg Pillow is ideal for side sleepers, offering spinal and hip alignment when placed between the knees during sleep. However, back sleepers can also benefit by positioning it under their knees for extra support at night.</p>",
+            "page": ""
+          }
+        },
+        "template--16627542425843__99ed3323-c96d-47a3-a5fa-2fc23799acc3-166527582682d5fcb8-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What makes the Wonder Pillow different from other pillows?",
+            "icon": "none",
+            "row_content": "<p>The Wonder Pillow features an orthopedic curved shape for neck and head support, reducing neck and back pain. Made of high-quality memory foam, it contours well and includes a thermoregulating gel pad to disperse heat, keeping you cool while sleeping.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16627542425843__99ed3323-c96d-47a3-a5fa-2fc23799acc3-166527582682d5fcb8-0",
+        "template--16627542425843__99ed3323-c96d-47a3-a5fa-2fc23799acc3-166527582682d5fcb8-1",
+        "template--16627542425843__99ed3323-c96d-47a3-a5fa-2fc23799acc3-166527582682d5fcb8-2"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "FAQs",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "row",
+        "color_scheme": "background-1",
+        "container_color_scheme": "accent-1",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 56
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "banner",
+    "product-grid",
+    "c4cb02f0-1d64-451a-96d1-b11087375e6d",
+    "8cab9206-bea0-4e2b-98c4-bd2995bce120",
+    "image-with-text-1",
+    "38c1a1b5-6bc5-41d9-aedc-3e8db842e5b7",
+    "99ed3323-c96d-47a3-a5fa-2fc23799acc3"
+  ]
+}

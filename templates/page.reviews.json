@@ -1,0 +1,447 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 76
+      }
+    },
+    "76e022df-c7db-4b2f-af0c-b4ddacaafcde": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16629528068339__76e022df-c7db-4b2f-af0c-b4ddacaafcde-1665327871d606a5fd-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Check our community on Instagram and Facebook @wonderslumber!</p>",
+            "heading_size": "h2"
+          }
+        },
+        "template--16629528068339__76e022df-c7db-4b2f-af0c-b4ddacaafcde-1665327871d606a5fd-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Get a chance to be featured, tag us with your Wonder Slumber Stories and use the hashtag #wonderslumber.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16629528068339__76e022df-c7db-4b2f-af0c-b4ddacaafcde-1665327871d606a5fd-0",
+        "template--16629528068339__76e022df-c7db-4b2f-af0c-b4ddacaafcde-1665327871d606a5fd-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 16
+      }
+    },
+    "ccb55579-4c44-4b6c-a456-67334a5150ac": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16629528068339__ccb55579-4c44-4b6c-a456-67334a5150ac-1665327871bdde5173-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/CBPH-WS-57.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "https://www.instagram.com/p/Cjc0Tskrat0/"
+          }
+        },
+        "template--16629528068339__ccb55579-4c44-4b6c-a456-67334a5150ac-1665327871bdde5173-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/EM_NEW_SQUARE_WS_IMAGES_10.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "https://www.instagram.com/p/CjShKC9rNE7/"
+          }
+        },
+        "template--16629528068339__ccb55579-4c44-4b6c-a456-67334a5150ac-1665327871bdde5173-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/CBPH-WS-113.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "https://www.instagram.com/p/CcCLHDGu31e/"
+          }
+        },
+        "bf67a568-b774-4688-b391-5824f087538f": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/CBPH-WS-134.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "https://www.instagram.com/p/Cbq_9ZCuhrs/"
+          }
+        }
+      },
+      "block_order": [
+        "template--16629528068339__ccb55579-4c44-4b6c-a456-67334a5150ac-1665327871bdde5173-0",
+        "template--16629528068339__ccb55579-4c44-4b6c-a456-67334a5150ac-1665327871bdde5173-1",
+        "template--16629528068339__ccb55579-4c44-4b6c-a456-67334a5150ac-1665327871bdde5173-2",
+        "bf67a568-b774-4688-b391-5824f087538f"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 72
+      }
+    },
+    "6a48b894-236c-4240-b01a-d0164d585075": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16629528068339__6a48b894-236c-4240-b01a-d0164d585075-1665327871d606a5fd-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Reviews</p>",
+            "heading_size": "h2"
+          }
+        },
+        "template--16629528068339__6a48b894-236c-4240-b01a-d0164d585075-1665327871d606a5fd-1": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16629528068339__6a48b894-236c-4240-b01a-d0164d585075-1665327871d606a5fd-0",
+        "template--16629528068339__6a48b894-236c-4240-b01a-d0164d585075-1665327871d606a5fd-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 12
+      }
+    },
+    "0a49df22-1019-4b88-be3b-a2732b215e07": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16629528068339__0a49df22-1019-4b88-be3b-a2732b215e07-1665327871d606a5fd-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "template--16629528068339__0a49df22-1019-4b88-be3b-a2732b215e07-1665327871d606a5fd-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>It’s better than I expected po. It’s very comfortable and it isn’t as restricting as it looks. I love how adjustable it is. The mask helped me out a lot po! I work nights po kasi, kaya it’s a must have for me. I appreciate the free earplugs din po. Again, thank you for making this! I’ll be getting the weighted blanket next po :)  <strong>[Ea, Facebook]</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16629528068339__0a49df22-1019-4b88-be3b-a2732b215e07-1665327871d606a5fd-0",
+        "template--16629528068339__0a49df22-1019-4b88-be3b-a2732b215e07-1665327871d606a5fd-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-2",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "bbb0cacc-38e8-467f-862e-7823973c78d4": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16629528068339__bbb0cacc-38e8-467f-862e-7823973c78d4-1665327871bdde5173-0": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>It’s better than I expected po. It’s very comfortable and it isn’t as restricting as it looks. I love how adjustable it is. The mask helped me out a lot po! I work nights po kasi, kaya it’s a must have for me. I appreciate the free earplugs din po. Again, thank you for making this! I’ll be getting the weighted blanket next po :)  <strong>[Ea, Facebook]</strong></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16629528068339__bbb0cacc-38e8-467f-862e-7823973c78d4-1665327871bdde5173-1": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>I like that the eye patches can be adjusted so I can align them with my eyes. They are blackout and super soft. Tried it the first time and I had better sleep than the other nights I was using a regular sleep mask (like the ones in airline flights) so that’s amazing. Perfect for anyone who has trouble sleeping at night or people like mo who work graveyard shifts and have trouble sleeping in the middle of the day! <strong>[Bethany, Instagram]</strong></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16629528068339__bbb0cacc-38e8-467f-862e-7823973c78d4-1665327871bdde5173-2": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>By the way, this one works like wonder! Used this during one of my trips, and I had one of my best travel sleeps ever. Super comfortable and absolutely zero lights. The thing with this mask though is that you can still open your eyes coz of the way it is constructed. And when you open your eyes it’s still totally dark. With typical masks, you cannot open your eyes coz the cloth presses your eyelids shut. <strong>[Francis, Instagram]</strong></p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16629528068339__bbb0cacc-38e8-467f-862e-7823973c78d4-1665327871bdde5173-0",
+        "template--16629528068339__bbb0cacc-38e8-467f-862e-7823973c78d4-1665327871bdde5173-1",
+        "template--16629528068339__bbb0cacc-38e8-467f-862e-7823973c78d4-1665327871bdde5173-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 8,
+        "padding_bottom": 36
+      }
+    },
+    "28589fcf-518c-4284-b59c-2ef2eea5ae18": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16629528068339__28589fcf-518c-4284-b59c-2ef2eea5ae18-1665327871d606a5fd-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>I like that the eye patches can be adjusted so I can align them with my eyes. They are blackout and super soft. Tried it the first time and I had better sleep than the other nights I was using a regular sleep mask (like the ones in airline flights) so that’s amazing. Perfect for anyone who has trouble sleeping at night or people like mo who work graveyard shifts and have trouble sleeping in the middle of the day! <strong>[Bethany, Instagram]</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16629528068339__28589fcf-518c-4284-b59c-2ef2eea5ae18-1665327871d606a5fd-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "5b195d5b-77e5-42f3-9b3c-406e649e5ae5": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16629528068339__5b195d5b-77e5-42f3-9b3c-406e649e5ae5-1665327871d606a5fd-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>I sleep a lot faster using it every night thanks to the sleep mask. I felt the drowsiness on my eyes while wearing the mask because the two circles are soft and comforting. <strong>[Kevin, Facebook]</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16629528068339__5b195d5b-77e5-42f3-9b3c-406e649e5ae5-1665327871d606a5fd-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-2",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "0fec9011-ea25-4710-aee0-69ed2d977834": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16629528068339__0fec9011-ea25-4710-aee0-69ed2d977834-1665327871d606a5fd-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>It helps us po to get sleep faster. Dati kasi kami ng anak ko hirap na hirap makatulog agad, pero ngayon mas mabilis na kami makatulog. No need to take melatonin. Thanks sa pillow mist. Till next order :) <strong>[Cath, Facebook]</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16629528068339__0fec9011-ea25-4710-aee0-69ed2d977834-1665327871d606a5fd-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "94972321-9b6d-4bdc-9965-835bec10c679": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16629528068339__94972321-9b6d-4bdc-9965-835bec10c679-1665327871d606a5fd-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Effective po siya sabi ng mother ko, nakakatulog na po siya ng mas mabilis :) <strong>[Claire, Instagram]</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16629528068339__94972321-9b6d-4bdc-9965-835bec10c679-1665327871d606a5fd-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-2",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "9cc52084-c1e1-4a2d-b4f3-1f18f4ce8ef1": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16629528068339__9cc52084-c1e1-4a2d-b4f3-1f18f4ce8ef1-1665327871d606a5fd-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Can’t thank you enough! My hunt for the perfect pillow is done! These are excellent since I’ve decided to invest in getting better sleep. <strong>[Mac, Instagram]</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16629528068339__9cc52084-c1e1-4a2d-b4f3-1f18f4ce8ef1-1665327871d606a5fd-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "e37c0437-3243-4623-b975-8705f3846f95": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16629528068339__e37c0437-3243-4623-b975-8705f3846f95-1665327871d606a5fd-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The material is smooth and soft and does not irritate the skin. The weight is also perfect and has helped improve the time at which I fall asleep. I’m glad I chose Wonder Slumber for my weighted blanket :) <strong>[Jenny, Facebook]</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16629528068339__e37c0437-3243-4623-b975-8705f3846f95-1665327871d606a5fd-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-2",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "a4b86e6f-e04a-454b-a6f4-4784c7e30e46": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16629528068339__a4b86e6f-e04a-454b-a6f4-4784c7e30e46-1665327871d606a5fd-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We love our blanket! I bought several to give as gifts and they all loved them too! I will be ordering more this christmas! <strong>[Beth, Instagram]</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16629528068339__a4b86e6f-e04a-454b-a6f4-4784c7e30e46-1665327871d606a5fd-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "e5c3ca63-5eac-4ea4-a706-6de6b54e1464": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16629528068339__e5c3ca63-5eac-4ea4-a706-6de6b54e1464-1665327871d606a5fd-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>They keep me cool while sleeping. Sheets are soft and cozy. I’ve tried other brands and materials like cotton and silk sheets but nothing compares to this Bamboo bed sheet <strong>[Jenny, Email]</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16629528068339__e5c3ca63-5eac-4ea4-a706-6de6b54e1464-1665327871d606a5fd-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-2",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "2632af6c-579e-47fd-9a09-0e74ca6c3cfe": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16629528068339__2632af6c-579e-47fd-9a09-0e74ca6c3cfe-1665327871d606a5fd-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Hands down the best sheets available! Nothing can beat a great night’s sleep with these sheets and a weighted blanket. Thank you so much for making such high-quality products! <strong>[Nancy, Facebook]</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16629528068339__2632af6c-579e-47fd-9a09-0e74ca6c3cfe-1665327871d606a5fd-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 88
+      }
+    }
+  },
+  "order": [
+    "main",
+    "76e022df-c7db-4b2f-af0c-b4ddacaafcde",
+    "ccb55579-4c44-4b6c-a456-67334a5150ac",
+    "6a48b894-236c-4240-b01a-d0164d585075",
+    "0a49df22-1019-4b88-be3b-a2732b215e07",
+    "bbb0cacc-38e8-467f-862e-7823973c78d4",
+    "28589fcf-518c-4284-b59c-2ef2eea5ae18",
+    "5b195d5b-77e5-42f3-9b3c-406e649e5ae5",
+    "0fec9011-ea25-4710-aee0-69ed2d977834",
+    "94972321-9b6d-4bdc-9965-835bec10c679",
+    "9cc52084-c1e1-4a2d-b4f3-1f18f4ce8ef1",
+    "e37c0437-3243-4623-b975-8705f3846f95",
+    "a4b86e6f-e04a-454b-a6f4-4784c7e30e46",
+    "e5c3ca63-5eac-4ea4-a706-6de6b54e1464",
+    "2632af6c-579e-47fd-9a09-0e74ca6c3cfe"
+  ]
+}

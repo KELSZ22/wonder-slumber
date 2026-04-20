@@ -1,0 +1,248 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 76
+      }
+    },
+    "156912a2-b4d3-4e69-b8a0-70c2a647f252": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16629296660723__156912a2-b4d3-4e69-b8a0-70c2a647f252-166532445392260da9-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>HERE'S THE PROBLEM</p>"
+          }
+        },
+        "template--16629296660723__156912a2-b4d3-4e69-b8a0-70c2a647f252-166532445392260da9-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>62% of people around the world have problem sleeping.</p>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--16629296660723__156912a2-b4d3-4e69-b8a0-70c2a647f252-166532445392260da9-1",
+        "template--16629296660723__156912a2-b4d3-4e69-b8a0-70c2a647f252-166532445392260da9-0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "f43fdd3c-0bb2-4f0c-bc8e-86ef1f1ab895": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16629296660723__f43fdd3c-0bb2-4f0c-bc8e-86ef1f1ab895-166532445356dd465c-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Artboard_3.png",
+            "title": "At least seven hours of sleep each night is needed for proper cognitive and behavioral functions.",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16629296660723__f43fdd3c-0bb2-4f0c-bc8e-86ef1f1ab895-166532445356dd465c-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Artboard_4.png",
+            "title": "Getting enough sleep is essential for helping a person maintain optimal health and well-being.",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16629296660723__f43fdd3c-0bb2-4f0c-bc8e-86ef1f1ab895-166532445356dd465c-0",
+        "template--16629296660723__f43fdd3c-0bb2-4f0c-bc8e-86ef1f1ab895-166532445356dd465c-1"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 80
+      }
+    },
+    "35bf9d63-0443-4b66-8d0a-5b665e8f8226": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16629296660723__35bf9d63-0443-4b66-8d0a-5b665e8f8226-166532445392260da9-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>HERE'S HOW WE CAME IN THE PICTURE</p>"
+          }
+        },
+        "template--16629296660723__35bf9d63-0443-4b66-8d0a-5b665e8f8226-166532445392260da9-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Wonder Slumber started with a simple goal - to help Filipinos sleep better.</p>",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "template--16629296660723__35bf9d63-0443-4b66-8d0a-5b665e8f8226-166532445392260da9-1",
+        "template--16629296660723__35bf9d63-0443-4b66-8d0a-5b665e8f8226-166532445392260da9-0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-2",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "19bec784-4402-4179-870f-baa699905b57": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16629296660723__19bec784-4402-4179-870f-baa699905b57-1665324453e68379ae-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Tiffanny and Keith</strong>, the founders of Wonder Slumber, <strong>used to suffer from insomnia.</strong></p><p>Knowing the <em>frustration of not being able to get a restful night's sleep</em>, they decided to curate and release products that would not only help themselves but <strong>others sleep better as well.</strong></p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16629296660723__19bec784-4402-4179-870f-baa699905b57-1665324453e68379ae-1"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Artboard_20_a15c8ada-457e-4354-82cf-af778e3e5b1a.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1bbd7eee-159f-45b8-8b49-8a15c3093f93": {
+      "type": "image-banner",
+      "blocks": {
+        "template--16629296660723__1bbd7eee-159f-45b8-8b49-8a15c3093f93-1665324422ab534a56-1": {
+          "type": "text",
+          "settings": {
+            "text": "Wonder Slumber focuses on enhancing the overall sleeping experience of Filipinos across all walks of life. Our products foster feelings of productiveness and needed energy boost for their day-to-day activities.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16629296660723__1bbd7eee-159f-45b8-8b49-8a15c3093f93-1665324422ab534a56-1"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/pexels-alex-green-5692264.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "b8a248f9-63cf-49ff-ac87-c282fbee0b72": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div data-id=\"60335a2adbecbc\"></div>",
+        "color_scheme": "background-1",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "27cad89c-02fa-48c5-a681-7f90ac517c36": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16629296660723__27cad89c-02fa-48c5-a681-7f90ac517c36-166532445392260da9-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Get the sleep you deserve.</p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--16629296660723__27cad89c-02fa-48c5-a681-7f90ac517c36-166532445392260da9-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP ALL",
+            "button_link": "shopify://collections/shop-all",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16629296660723__27cad89c-02fa-48c5-a681-7f90ac517c36-166532445392260da9-0",
+        "template--16629296660723__27cad89c-02fa-48c5-a681-7f90ac517c36-166532445392260da9-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "4e9ae5ad-621f-428a-ae0d-5313f2ecd731": {
+      "type": "rich-text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    }
+  },
+  "order": [
+    "main",
+    "156912a2-b4d3-4e69-b8a0-70c2a647f252",
+    "f43fdd3c-0bb2-4f0c-bc8e-86ef1f1ab895",
+    "35bf9d63-0443-4b66-8d0a-5b665e8f8226",
+    "19bec784-4402-4179-870f-baa699905b57",
+    "1bbd7eee-159f-45b8-8b49-8a15c3093f93",
+    "b8a248f9-63cf-49ff-ac87-c282fbee0b72",
+    "27cad89c-02fa-48c5-a681-7f90ac517c36",
+    "4e9ae5ad-621f-428a-ae0d-5313f2ecd731"
+  ]
+}

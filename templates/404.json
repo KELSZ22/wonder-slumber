@@ -1,0 +1,66 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-404",
+      "disabled": true,
+      "settings": {}
+    },
+    "75ffd94f-2563-4cf6-b669-b221fcc14136": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16589115949299__75ffd94f-2563-4cf6-b669-b221fcc14136-1665353280dd4b38ec-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "You are now in deep sleep.",
+            "heading_size": "h1"
+          }
+        },
+        "template--16589115949299__75ffd94f-2563-4cf6-b669-b221fcc14136-1665353280dd4b38ec-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We can't find what you are looking for. Go to <a href=\"https://wonderslumber.com\" target=\"_blank\" title=\"https://wonderslumber.com\">homepage</a></p>",
+            "text_style": "body"
+          }
+        },
+        "template--16589115949299__75ffd94f-2563-4cf6-b669-b221fcc14136-1665353280dd4b38ec-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16589115949299__75ffd94f-2563-4cf6-b669-b221fcc14136-1665353280dd4b38ec-0",
+        "template--16589115949299__75ffd94f-2563-4cf6-b669-b221fcc14136-1665353280dd4b38ec-1",
+        "template--16589115949299__75ffd94f-2563-4cf6-b669-b221fcc14136-1665353280dd4b38ec-2"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Artboard_22.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "75ffd94f-2563-4cf6-b669-b221fcc14136"
+  ]
+}

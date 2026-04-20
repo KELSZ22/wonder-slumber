@@ -1,0 +1,13 @@
+<div class="vertical-video-slideshow owl-carousel owl-theme">
+{% assign videos = "yNEnwHTVUoc,eoCTo_Abr1I,5x06fa84ZsM,cnEs9pMriXc,-ZMS7H_6ZHg,SJvA_sTQd_o,FPJyF3cdHks,9DU2h8MfbwE" | split: ',' %}
+  {% for video in videos %}
+    <div class="video-container">
+      <div class="video-wrapper">
+        <div class="video-content">
+          <iframe style="border:none;" class="video-embed lazyload hs-id-a5c04bf6" data-src="https://youtube.com/embed/{{ video }}">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

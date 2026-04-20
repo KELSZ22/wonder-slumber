@@ -1,0 +1,13 @@
+<div class="vertical-video-slideshow owl-carousel owl-theme">
+{% assign videos = "EMsbvjvjx2k?si=wW21dL6ypivxbcHm,KP1LHUQhVn4?feature=share,ubtnGP8kkh4?si=RgB0XACqa9oAgn4n,MWFfHQTue7Y?si=uaevQafxioy5MtjK,-CiQOtLKRTo?feature=share?,NBuJjjnpVkc?si=wJ5VUQHt4Y8zC_tm" | split: ',' %}
+  {% for video in videos %}
+    <div class="video-container">
+      <div class="video-wrapper">
+        <div class="video-content">
+          <iframe class="video-embed lazyload hs-id-c349230f" data-src="https://youtube.com/embed/{{ video }}">
+</iframe>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

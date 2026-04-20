@@ -1,0 +1,413 @@
+{% liquid
+  assign testimonial_slides = blank
+  if product and product.metafields.custom.product_testimonial_slider != blank
+    assign testimonial_slides = product.metafields.custom.product_testimonial_slider.value
+  endif
+%}
+
+{% if testimonial_slides != blank or request.design_mode %}
+<section id="ProductTestimonialSlider-{{ section.id }}" class="product-testimonial-slider">
+  <div class="pts__inner">
+    {% if testimonial_slides != blank %}
+      <div class="pts__slider" data-slider>
+        <div class="pts__viewport" data-viewport>
+          <div class="pts__track" data-track>
+            {% for slide in testimonial_slides %}
+              {% assign slide_image = slide.background_image.value %}
+              <article class="pts__slide">
+                <div class="pts__frame">
+                  <div class="pts__image-wrap">
+                    {% if slide_image != blank %}
+                      {{
+                        slide_image
+                        | image_url: width: 2400
+                        | image_tag:
+                          class: 'pts__image',
+                          loading: 'lazy',
+                          sizes: '(min-width: 990px) 1200px, 100vw',
+                          widths: '480,720,900,1200,1600,2000,2400',
+                          alt: slide.heading.value | escape
+                      }}
+                    {% else %}
+                      {{ 'image' | placeholder_svg_tag: 'pts__placeholder' }}
+                    {% endif %}
+                  </div>
+
+                  <div class="pts__content">
+                    {% if slide.heading.value != blank %}
+                      <h2 class="pts__heading">{{ slide.heading.value | escape }}</h2>
+                    {% endif %}
+
+                    {% if slide.description.value != blank %}
+                      <div class="pts__description">
+                        {{ slide.description.value | escape | newline_to_br }}
+                      </div>
+                    {% endif %}
+                  </div>
+                </div>
+              </article>
+            {% endfor %}
+          </div>
+        </div>
+
+        {% if testimonial_slides.size > 1 %}
+          <div class="pts__controls">
+            <button type="button" class="pts__arrow" data-prev aria-label="Previous testimonial">
+              <span aria-hidden="true">&#8249;</span>
+            </button>
+
+            <div class="pts__dots" aria-label="Testimonial pagination">
+              {% for slide in testimonial_slides %}
+                <button
+                  type="button"
+                  class="pts__dot{% if forloop.first %} is-active{% endif %}"
+                  data-dot="{{ forloop.index0 }}"
+                  aria-label="Go to testimonial {{ forloop.index }}"
+                  aria-current="{% if forloop.first %}true{% else %}false{% endif %}"
+                ></button>
+              {% endfor %}
+            </div>
+
+            <button type="button" class="pts__arrow" data-next aria-label="Next testimonial">
+              <span aria-hidden="true">&#8250;</span>
+            </button>
+          </div>
+        {% endif %}
+      </div>
+    {% elsif request.design_mode %}
+      <div class="pts__empty">
+        Add entries to the product metafield <strong>custom.product_testimonial_slider</strong> to show this section.
+      </div>
+    {% endif %}
+  </div>
+
+  <style>
+    #ProductTestimonialSlider-{{ section.id }} {
+      --pts-section-bg: {{ section.settings.section_background }};
+      --pts-card-bg: {{ section.settings.card_background }};
+      --pts-heading-color: {{ section.settings.heading_color }};
+      --pts-text-color: {{ section.settings.text_color }};
+      --pts-desktop-height: {{ section.settings.desktop_height }}px;
+      --pts-mobile-image-height: {{ section.settings.mobile_image_height }}px;
+      background: var(--pts-section-bg);
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+
+    #ProductTestimonialSlider-{{ section.id }} .pts__inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    #ProductTestimonialSlider-{{ section.id }} .pts__viewport {
+      overflow: hidden;
+    }
+
+    #ProductTestimonialSlider-{{ section.id }} .pts__track {
+      display: flex;
+      transition: transform 0.45s ease;
+      will-change: transform;
+    }
+
+    #ProductTestimonialSlider-{{ section.id }} .pts__slide {
+      flex: 0 0 100%;
+      min-width: 100%;
+    }
+
+    #ProductTestimonialSlider-{{ section.id }} .pts__frame {
+      position: relative;
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    #ProductTestimonialSlider-{{ section.id }} .pts__image-wrap {
+      position: relative;
+      height: var(--pts-desktop-height);
+      overflow: hidden;
+    }
+
+    #ProductTestimonialSlider-{{ section.id }} .pts__image,
+    #ProductTestimonialSlider-{{ section.id }} .pts__placeholder {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    #ProductTestimonialSlider-{{ section.id }} .pts__content {
+      position: absolute;
+      top: 50%;
+      left: 56px;
+      transform: translateY(-50%);
+      width: min(600px, calc(100% - 112px));
+      background: var(--pts-card-bg);
+      border-radius: 28px;
+      padding: 40px 48px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    #ProductTestimonialSlider-{{ section.id }} .pts__heading {
+      margin: 0 0 18px;
+      color: var(--pts-heading-color);
+      font-size: clamp(28px, 3vw, 46px);
+      line-height: 1.15;
+      font-weight: 700;
+    }
+
+    #ProductTestimonialSlider-{{ section.id }} .pts__description {
+      color: var(--pts-text-color);
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    #ProductTestimonialSlider-{{ section.id }} .pts__controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      padding-top: 18px;
+    }
+
+    #ProductTestimonialSlider-{{ section.id }} .pts__arrow {
+      border: 0;
+      background: transparent;
+      color: var(--pts-heading-color);
+      font-size: 28px;
+      line-height: 1;
+      width: 36px;
+      height: 36px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+
+    #ProductTestimonialSlider-{{ section.id }} .pts__dots {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    #ProductTestimonialSlider-{{ section.id }} .pts__dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      border: 1px solid rgba(0, 0, 0, 0.35);
+      background: transparent;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    #ProductTestimonialSlider-{{ section.id }} .pts__dot.is-active {
+      background: var(--pts-heading-color);
+      border-color: var(--pts-heading-color);
+    }
+
+    #ProductTestimonialSlider-{{ section.id }} .pts__empty {
+      padding: 24px;
+      background: #fff;
+      border: 1px dashed rgba(0, 0, 0, 0.15);
+      text-align: center;
+    }
+
+    @media screen and (max-width: 749px) {
+      #ProductTestimonialSlider-{{ section.id }} {
+        padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+        padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+      }
+
+      #ProductTestimonialSlider-{{ section.id }} .pts__inner {
+        padding: 0 12px;
+      }
+
+      #ProductTestimonialSlider-{{ section.id }} .pts__frame {
+        border: 0;
+        background: transparent;
+      }
+
+      #ProductTestimonialSlider-{{ section.id }} .pts__image-wrap {
+        height: var(--pts-mobile-image-height);
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-bottom: 0;
+      }
+
+      #ProductTestimonialSlider-{{ section.id }} .pts__content {
+        position: static;
+        transform: none;
+        width: 100%;
+        background: transparent;
+        padding: 28px 28px 0;
+      }
+
+      #ProductTestimonialSlider-{{ section.id }} .pts__heading {
+        font-size: 28px;
+        margin-bottom: 18px;
+      }
+
+      #ProductTestimonialSlider-{{ section.id }} .pts__description {
+        font-size: 17px;
+        line-height: 1.7;
+      }
+
+      #ProductTestimonialSlider-{{ section.id }} .pts__controls {
+        margin-top: 18px;
+        padding: 16px 20px;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius: 0 0 24px 24px;
+        background: var(--pts-section-bg);
+      }
+    }
+  </style>
+
+  <script>
+    (function() {
+      const section = document.getElementById('ProductTestimonialSlider-{{ section.id }}');
+      if (!section || section.dataset.initialized === 'true') return;
+
+      section.dataset.initialized = 'true';
+
+      const slider = section.querySelector('[data-slider]');
+      if (!slider) return;
+
+      const viewport = slider.querySelector('[data-viewport]');
+      const track = slider.querySelector('[data-track]');
+      const slides = Array.from(slider.querySelectorAll('.pts__slide'));
+      const dots = Array.from(slider.querySelectorAll('[data-dot]'));
+      const prevButton = slider.querySelector('[data-prev]');
+      const nextButton = slider.querySelector('[data-next]');
+
+      if (!track || slides.length <= 1) return;
+
+      let currentIndex = 0;
+      let touchStartX = 0;
+
+      function goToSlide(index) {
+        currentIndex = (index + slides.length) % slides.length;
+        track.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
+
+        dots.forEach(function(dot, dotIndex) {
+          const isActive = dotIndex === currentIndex;
+          dot.classList.toggle('is-active', isActive);
+          dot.setAttribute('aria-current', isActive ? 'true' : 'false');
+        });
+      }
+
+      if (prevButton) {
+        prevButton.addEventListener('click', function() {
+          goToSlide(currentIndex - 1);
+        });
+      }
+
+      if (nextButton) {
+        nextButton.addEventListener('click', function() {
+          goToSlide(currentIndex + 1);
+        });
+      }
+
+      dots.forEach(function(dot) {
+        dot.addEventListener('click', function() {
+          goToSlide(Number(dot.getAttribute('data-dot')));
+        });
+      });
+
+      viewport.addEventListener('touchstart', function(event) {
+        touchStartX = event.changedTouches[0].clientX;
+      }, { passive: true });
+
+      viewport.addEventListener('touchend', function(event) {
+        const touchEndX = event.changedTouches[0].clientX;
+        const deltaX = touchEndX - touchStartX;
+
+        if (Math.abs(deltaX) > 50) {
+          if (deltaX > 0) {
+            goToSlide(currentIndex - 1);
+          } else {
+            goToSlide(currentIndex + 1);
+          }
+        }
+      }, { passive: true });
+
+      goToSlide(0);
+    })();
+  </script>
+</section>
+{% endif %}
+{% schema %}
+{
+  "name": "Testimonial Slider",
+  "settings": [
+    {
+      "type": "range",
+      "id": "desktop_height",
+      "label": "Desktop image height",
+      "min": 360,
+      "max": 800,
+      "step": 10,
+      "unit": "px",
+      "default": 460
+    },
+    {
+      "type": "range",
+      "id": "mobile_image_height",
+      "label": "Mobile image height",
+      "min": 180,
+      "max": 420,
+      "step": 10,
+      "unit": "px",
+      "default": 300
+    },
+    {
+      "type": "color",
+      "id": "section_background",
+      "label": "Section background",
+      "default": "#f6f6f6"
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "Text card background",
+      "default": "#efefef"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#171717"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Body text color",
+      "default": "#656565"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 40
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonial Slider"
+    }
+  ]
+}
+{% endschema %}

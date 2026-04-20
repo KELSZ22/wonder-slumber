@@ -1,0 +1,284 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "3cc569b7-857a-4178-95d8-3e750f89debe": {
+      "type": "image-banner",
+      "blocks": {
+        "1590b528-95a4-4b9b-8098-7ee29126a505": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join the Slumber Movement",
+            "heading_size": "h1"
+          }
+        },
+        "af8c464a-195f-44eb-a79c-788d006aec03": {
+          "type": "text",
+          "settings": {
+            "text": "As a member, you’ll earn points every time you shop. It’s time to get comfy with great rewards.",
+            "text_style": "body"
+          }
+        },
+        "5a51df34-7ab1-4236-b071-88e2b59097ed": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Join Now",
+            "button_link_1": "https://wonderslumber.com/account/register",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1590b528-95a4-4b9b-8098-7ee29126a505",
+        "af8c464a-195f-44eb-a79c-788d006aec03",
+        "5a51df34-7ab1-4236-b071-88e2b59097ed"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/pexels-ketut-subiyanto-4473771_eb572c6e-966a-4c5b-8859-61bbe9d33829.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "accent-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 76
+      }
+    },
+    "a7471801-02f5-4473-87e9-7928460a43bc": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16698200522995__a7471801-02f5-4473-87e9-7928460a43bc-1670032895b9eab7d4-0": {
+          "type": "column",
+          "settings": {
+            "title": "JOIN",
+            "text": "<p>It’s easy and you’ll get<br/>500 points right away.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16698200522995__a7471801-02f5-4473-87e9-7928460a43bc-1670032895b9eab7d4-1": {
+          "type": "column",
+          "settings": {
+            "title": "EARN",
+            "text": "<p>Earn 1 point for<br/>every ₱1 you spend.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16698200522995__a7471801-02f5-4473-87e9-7928460a43bc-1670032895b9eab7d4-2": {
+          "type": "column",
+          "settings": {
+            "title": "REDEEM",
+            "text": "<p>Apply your rewards to<br/>save when you shop.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16698200522995__a7471801-02f5-4473-87e9-7928460a43bc-1670032895b9eab7d4-0",
+        "template--16698200522995__a7471801-02f5-4473-87e9-7928460a43bc-1670032895b9eab7d4-1",
+        "template--16698200522995__a7471801-02f5-4473-87e9-7928460a43bc-1670032895b9eab7d4-2"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 84,
+        "padding_bottom": 60
+      }
+    },
+    "c390993b-698b-4337-a710-eccc97c55d60": {
+      "type": "rich-text",
+      "blocks": {
+        "a49ae903-526a-4c7e-ae7d-41fa05542971": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Here's How to Earn Points</p>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "a49ae903-526a-4c7e-ae7d-41fa05542971"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 20
+      }
+    },
+    "c2f43b32-cad5-4f1f-b511-8027b007e3ce": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16698200522995__c2f43b32-cad5-4f1f-b511-8027b007e3ce-1670032895b9eab7d4-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Artboard_26.png",
+            "title": "1 Point",
+            "text": "<p>For every P1 spent</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "997f977e-8673-4879-8179-661a0604ea42": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Artboard_29.png",
+            "title": "200 Points",
+            "text": "<p>Follow on Instagram</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "e9042f4b-a459-4964-b1d8-375ba0c203ff": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/facebook-app-symbol_4.png",
+            "title": "200 Points",
+            "text": "<p>Like on Facebook</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16698200522995__c2f43b32-cad5-4f1f-b511-8027b007e3ce-1670032895b9eab7d4-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Artboard_27.png",
+            "title": "500 Points",
+            "text": "<p>Create an account</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "3f5c7333-3609-4417-97da-d389271381ce": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Artboard_31.png",
+            "title": "500 Points",
+            "text": "<p>Share on Facebook</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16698200522995__c2f43b32-cad5-4f1f-b511-8027b007e3ce-1670032895b9eab7d4-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Artboard_25.png",
+            "title": "1000 Points",
+            "text": "<p>Let's celebrate your birthday!</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16698200522995__c2f43b32-cad5-4f1f-b511-8027b007e3ce-1670032895b9eab7d4-0",
+        "997f977e-8673-4879-8179-661a0604ea42",
+        "e9042f4b-a459-4964-b1d8-375ba0c203ff",
+        "template--16698200522995__c2f43b32-cad5-4f1f-b511-8027b007e3ce-1670032895b9eab7d4-2",
+        "3f5c7333-3609-4417-97da-d389271381ce",
+        "template--16698200522995__c2f43b32-cad5-4f1f-b511-8027b007e3ce-1670032895b9eab7d4-1"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "third",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "b6e0061b-4091-4639-a672-535a5ace50f2": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16698200522995__b6e0061b-4091-4639-a672-535a5ace50f2-16700328958adbb16f-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>How to redeem your points</p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--16698200522995__b6e0061b-4091-4639-a672-535a5ace50f2-16700328958adbb16f-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>It's simple to redeem points! Simply apply points upon checkout!</p>"
+          }
+        },
+        "template--16698200522995__b6e0061b-4091-4639-a672-535a5ace50f2-16700328958adbb16f-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Get Started",
+            "button_link": "https://wonderslumber.com/account/register",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16698200522995__b6e0061b-4091-4639-a672-535a5ace50f2-16700328958adbb16f-0",
+        "template--16698200522995__b6e0061b-4091-4639-a672-535a5ace50f2-16700328958adbb16f-1",
+        "template--16698200522995__b6e0061b-4091-4639-a672-535a5ace50f2-16700328958adbb16f-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 84
+      }
+    }
+  },
+  "order": [
+    "3cc569b7-857a-4178-95d8-3e750f89debe",
+    "main",
+    "a7471801-02f5-4473-87e9-7928460a43bc",
+    "c390993b-698b-4337-a710-eccc97c55d60",
+    "c2f43b32-cad5-4f1f-b511-8027b007e3ce",
+    "b6e0061b-4091-4639-a672-535a5ace50f2"
+  ]
+}

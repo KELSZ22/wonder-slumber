@@ -1,0 +1,197 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 76
+      }
+    },
+    "d81984f5-d02a-48bd-8c38-443a200a6c74": {
+      "type": "image-banner",
+      "blocks": {
+        "template--16629717434611__d81984f5-d02a-48bd-8c38-443a200a6c74-1665330619346fc348-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Laundry Guide",
+            "heading_size": "h1"
+          }
+        },
+        "template--16629717434611__d81984f5-d02a-48bd-8c38-443a200a6c74-1665330619346fc348-1": {
+          "type": "text",
+          "settings": {
+            "text": "Use these general care tips to keep your Wonder Slumber products looking their best. Following these simple care instructions will preserve the quality of our products for several years.",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "template--16629717434611__d81984f5-d02a-48bd-8c38-443a200a6c74-1665330619346fc348-0",
+        "template--16629717434611__d81984f5-d02a-48bd-8c38-443a200a6c74-1665330619346fc348-1"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/pexels-ketut-subiyanto-4473879.jpg",
+        "image_overlay_opacity": 10,
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "77f75cc4-f09f-4b0c-886b-2f8657a1c37e": {
+      "type": "rich-text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "36c84823-8284-4d69-8598-6df174c71734": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16629717434611__36c84823-8284-4d69-8598-6df174c71734-1665330805a71381e1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Silk Pillowcase</p>",
+            "heading_size": "h2"
+          }
+        },
+        "template--16629717434611__36c84823-8284-4d69-8598-6df174c71734-1665330805a71381e1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>While traditional silk requires delicate hand washing, our Silk Pillowcases are machine washable to make them as low-maintenance as possible. We recommend washing them on a gentle cycle with cold water in a mesh wash bag and a mild detergent. Do not use chlorine bleach or fabric softener. Air dry to maintain quality and longevity.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16629717434611__36c84823-8284-4d69-8598-6df174c71734-1665330805a71381e1-0",
+        "template--16629717434611__36c84823-8284-4d69-8598-6df174c71734-1665330805a71381e1-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "accent-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "44eab7c5-648b-48b2-ba45-a3abbfdb189b": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16629717434611__44eab7c5-648b-48b2-ba45-a3abbfdb189b-1665330805a71381e1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Lyocell Bamboo Sheet Set</p>",
+            "heading_size": "h2"
+          }
+        },
+        "template--16629717434611__44eab7c5-648b-48b2-ba45-a3abbfdb189b-1665330805a71381e1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wash in cold water on a gentle cycle then simply hang it to dry. Only use mild detergent and do not use bleach.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16629717434611__44eab7c5-648b-48b2-ba45-a3abbfdb189b-1665330805a71381e1-0",
+        "template--16629717434611__44eab7c5-648b-48b2-ba45-a3abbfdb189b-1665330805a71381e1-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 76,
+        "padding_bottom": 76
+      }
+    },
+    "42a6ac8c-0f13-4f80-8b7b-95a0dfb9357f": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16629717434611__42a6ac8c-0f13-4f80-8b7b-95a0dfb9357f-1665330805a71381e1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Pillow</p>",
+            "heading_size": "h2"
+          }
+        },
+        "template--16629717434611__42a6ac8c-0f13-4f80-8b7b-95a0dfb9357f-1665330805a71381e1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You can’t wash the pillow itself as this may damage the memory foam. However, you can normally wash the outer pillow cover.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16629717434611__42a6ac8c-0f13-4f80-8b7b-95a0dfb9357f-1665330805a71381e1-0",
+        "template--16629717434611__42a6ac8c-0f13-4f80-8b7b-95a0dfb9357f-1665330805a71381e1-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "accent-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "1a5cedc0-9165-4a62-b3c0-5e50ff65b21e": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16629717434611__1a5cedc0-9165-4a62-b3c0-5e50ff65b21e-1665330805a71381e1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Eye Mask</p>",
+            "heading_size": "h2"
+          }
+        },
+        "template--16629717434611__1a5cedc0-9165-4a62-b3c0-5e50ff65b21e-1665330805a71381e1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You can gently hand wash your Wonder Sleep Mask and hang it to dry. Please DO NOT use the washing machine for your Wonder Sleep Mask as this may damage the fabric and foam.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16629717434611__1a5cedc0-9165-4a62-b3c0-5e50ff65b21e-1665330805a71381e1-0",
+        "template--16629717434611__1a5cedc0-9165-4a62-b3c0-5e50ff65b21e-1665330805a71381e1-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "d81984f5-d02a-48bd-8c38-443a200a6c74",
+    "77f75cc4-f09f-4b0c-886b-2f8657a1c37e",
+    "36c84823-8284-4d69-8598-6df174c71734",
+    "44eab7c5-648b-48b2-ba45-a3abbfdb189b",
+    "42a6ac8c-0f13-4f80-8b7b-95a0dfb9357f",
+    "1a5cedc0-9165-4a62-b3c0-5e50ff65b21e"
+  ]
+}

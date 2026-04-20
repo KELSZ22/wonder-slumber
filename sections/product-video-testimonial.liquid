@@ -1,0 +1,433 @@
+{% liquid
+  assign video_links = product.metafields.custom.product_video_testimonial.value
+%}
+
+{% if video_links != blank %}
+  <section
+    id="ProductVideoTestimonial-{{ section.id }}"
+    class="product-video-testimonial section-{{ section.id }}-padding"
+    data-section-id="{{ section.id }}"
+  >
+    <div class="page-width">
+      {% if section.settings.heading != blank %}
+        <div class="product-video-testimonial__header">
+          <h2 class="product-video-testimonial__heading product-video-testimonial__heading--{{ section.settings.heading_size }}">
+            {{ section.settings.heading }}
+          </h2>
+        </div>
+      {% endif %}
+
+      <div class="product-video-testimonial__slider-wrap">
+        <button
+          type="button"
+          class="product-video-testimonial__arrow product-video-testimonial__arrow--prev"
+          aria-label="Previous videos"
+          data-slider-prev
+        >
+          &lt;
+        </button>
+
+        <div class="product-video-testimonial__viewport" data-slider-viewport>
+          <div class="product-video-testimonial__track" data-slider-track>
+            {% for item in video_links %}
+              {% assign raw_url = item | append: '' | strip %}
+              {% assign youtube_id = '' %}
+
+              {% if raw_url contains 'youtube.com/shorts/' %}
+                {% assign youtube_id = raw_url | split: 'youtube.com/shorts/' | last | split: '?' | first | split: '&' | first | split: '/' | first %}
+              {% elsif raw_url contains 'youtu.be/' %}
+                {% assign youtube_id = raw_url | split: 'youtu.be/' | last | split: '?' | first | split: '&' | first | split: '/' | first %}
+              {% elsif raw_url contains 'youtube.com/watch?v=' %}
+                {% assign youtube_id = raw_url | split: 'v=' | last | split: '&' | first %}
+              {% elsif raw_url contains 'youtube.com/embed/' %}
+                {% assign youtube_id = raw_url | split: 'youtube.com/embed/' | last | split: '?' | first | split: '&' | first | split: '/' | first %}
+              {% endif %}
+
+              {% if youtube_id != blank %}
+                <div class="product-video-testimonial__item" data-slider-item>
+                  <div class="product-video-testimonial__card">
+                    <div class="product-video-testimonial__media">
+                      <iframe
+                        src="https://www.youtube-nocookie.com/embed/{{ youtube_id }}?playsinline=1&rel=0&modestbranding=1"
+                        title="Video testimonial {{ forloop.index }}"
+                        loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+
+        <button
+          type="button"
+          class="product-video-testimonial__arrow product-video-testimonial__arrow--next"
+          aria-label="Next videos"
+          data-slider-next
+        >
+          &gt;
+        </button>
+      </div>
+
+      <div class="product-video-testimonial__dots" data-slider-dots></div>
+    </div>
+
+    <style>
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top_mobile }}px;
+        padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+      }
+
+      @media screen and (min-width: 750px) {
+        .section-{{ section.id }}-padding {
+          padding-top: {{ section.settings.padding_top_desktop }}px;
+          padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+        }
+      }
+
+      #ProductVideoTestimonial-{{ section.id }} {
+        --pvt-gap-mobile: 16px;
+        --pvt-gap-desktop: 20px;
+      }
+
+      #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__header {
+        text-align: center;
+        margin-bottom: 28px;
+      }
+
+      #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__heading {
+        margin: 0;
+        line-height: 1.1;
+      }
+
+      #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__heading--small {
+        font-size: 2.8rem;
+      }
+
+      #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__heading--medium {
+        font-size: 3.8rem;
+      }
+
+      #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__heading--large {
+        font-size: 4.8rem;
+      }
+
+      #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__slider-wrap {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        gap: 12px;
+      }
+
+      #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__viewport {
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+
+      #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__viewport::-webkit-scrollbar {
+        display: none;
+      }
+
+      #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__track {
+        display: flex;
+        gap: var(--pvt-gap-mobile);
+      }
+
+      #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__item {
+        flex: 0 0 82%;
+      }
+
+      #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__card {
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        background: #fff;
+      }
+
+      #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__media {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 9 / 16;
+        background: #000;
+      }
+
+      #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__media iframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        display: block;
+      }
+
+      #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__arrow {
+        width: 36px;
+        height: 36px;
+        border: 0;
+        background: transparent;
+        color: #222;
+        font-size: 20px;
+        line-height: 1;
+        cursor: pointer;
+        display: none;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__arrow.is-visible {
+        display: inline-flex;
+      }
+
+      #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__arrow.is-disabled {
+        opacity: 0.35;
+        pointer-events: none;
+      }
+
+      #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__dots {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__dots.is-visible {
+        display: flex;
+      }
+
+      #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 0;
+        background: rgba(0, 0, 0, 0.2);
+        padding: 0;
+        cursor: pointer;
+      }
+
+      #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__dot.is-active {
+        background: #8f9e96;
+      }
+
+      @media screen and (min-width: 750px) {
+        #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__track {
+          gap: var(--pvt-gap-desktop);
+        }
+
+        #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__item {
+          flex: 0 0 calc((100% - (var(--pvt-gap-desktop) * 3)) / 4);
+        }
+      }
+
+      @media screen and (max-width: 749px) {
+        #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__heading--small {
+          font-size: 2.2rem;
+        }
+
+        #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__heading--medium {
+          font-size: 2.8rem;
+        }
+
+        #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__heading--large {
+          font-size: 3.4rem;
+        }
+
+        #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__slider-wrap {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+
+    <script>
+      (function() {
+        const section = document.getElementById('ProductVideoTestimonial-{{ section.id }}');
+        if (!section) return;
+
+        const viewport = section.querySelector('[data-slider-viewport]');
+        const items = Array.from(section.querySelectorAll('[data-slider-item]'));
+        const prevBtn = section.querySelector('[data-slider-prev]');
+        const nextBtn = section.querySelector('[data-slider-next]');
+        const dotsWrap = section.querySelector('[data-slider-dots]');
+
+        if (!viewport || items.length === 0) return;
+
+        function getPerView() {
+          return window.innerWidth >= 750 ? 4 : 1;
+        }
+
+        function getPageCount() {
+          return Math.ceil(items.length / getPerView());
+        }
+
+        function getCurrentPage() {
+          const pageWidth = viewport.clientWidth;
+          if (pageWidth <= 0) return 0;
+          return Math.round(viewport.scrollLeft / pageWidth);
+        }
+
+        function buildDots() {
+          dotsWrap.innerHTML = '';
+          const pageCount = getPageCount();
+
+          for (let i = 0; i < pageCount; i++) {
+            const dot = document.createElement('button');
+            dot.type = 'button';
+            dot.className = 'product-video-testimonial__dot';
+            dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+            dot.addEventListener('click', function() {
+              viewport.scrollTo({
+                left: viewport.clientWidth * i,
+                behavior: 'smooth'
+              });
+            });
+            dotsWrap.appendChild(dot);
+          }
+        }
+
+        function updateControls() {
+          const perView = getPerView();
+          const pageCount = getPageCount();
+          const currentPage = Math.min(getCurrentPage(), Math.max(pageCount - 1, 0));
+          const hasSlider = items.length > perView;
+
+          prevBtn.classList.toggle('is-visible', hasSlider);
+          nextBtn.classList.toggle('is-visible', hasSlider);
+          dotsWrap.classList.toggle('is-visible', hasSlider);
+
+          prevBtn.classList.toggle('is-disabled', currentPage <= 0);
+          nextBtn.classList.toggle('is-disabled', currentPage >= pageCount - 1);
+
+          const dots = dotsWrap.querySelectorAll('.product-video-testimonial__dot');
+          dots.forEach((dot, index) => {
+            dot.classList.toggle('is-active', index === currentPage);
+          });
+        }
+
+        prevBtn.addEventListener('click', function() {
+          viewport.scrollBy({
+            left: -viewport.clientWidth,
+            behavior: 'smooth'
+          });
+        });
+
+        nextBtn.addEventListener('click', function() {
+          viewport.scrollBy({
+            left: viewport.clientWidth,
+            behavior: 'smooth'
+          });
+        });
+
+        let resizeTimer;
+        function handleResize() {
+          clearTimeout(resizeTimer);
+          resizeTimer = setTimeout(function() {
+            buildDots();
+            updateControls();
+          }, 100);
+        }
+
+        buildDots();
+        updateControls();
+
+        viewport.addEventListener('scroll', function() {
+          window.requestAnimationFrame(updateControls);
+        });
+
+        window.addEventListener('resize', handleResize);
+      })();
+    </script>
+  </section>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Product Video Testimonial",
+  "tag": "section",
+  "class": "section",
+  "templates": ["product"],
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Testimonials"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "label": "Heading size",
+      "default": "medium",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Desktop padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 36
+    },
+    {
+      "type": "header",
+      "content": "Mobile padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 24
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Video Testimonial"
+    }
+  ]
+}
+{% endschema %}

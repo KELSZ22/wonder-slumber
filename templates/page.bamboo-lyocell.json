@@ -1,0 +1,222 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 76
+      }
+    },
+    "b8bb4fcd-3838-4be1-935b-93817ab2c3e0": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16589116178675__b8bb4fcd-3838-4be1-935b-93817ab2c3e0-16675004620fbdf552-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p><strong>Why Bamboo?</strong></p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--16589116178675__b8bb4fcd-3838-4be1-935b-93817ab2c3e0-16675004620fbdf552-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you want the softest, silkiest, and most luxurious sleeping experience, then bamboo bed sheets are for you! Compared to cotton or linen, Bamboo Sheets are softer and silkier, giving both a cooler and breathable experience for a more luxurious sleep.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16589116178675__b8bb4fcd-3838-4be1-935b-93817ab2c3e0-16675004620fbdf552-0",
+        "template--16589116178675__b8bb4fcd-3838-4be1-935b-93817ab2c3e0-16675004620fbdf552-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "d7e7e079-4fc1-4251-ada8-e521e4f206b0": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16589116178675__d7e7e079-4fc1-4251-ada8-e521e4f206b0-1667500462b9b603c6-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Made for the Sleep you Deserve",
+            "heading_size": "h2"
+          }
+        },
+        "template--16589116178675__d7e7e079-4fc1-4251-ada8-e521e4f206b0-1667500462b9b603c6-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Here at Wonder Slumber, we only use 100% Superior Lyocell Bamboo fabric, which makes our sheets lighter, softer, stronger, and free from harmful chemicals, all while minimizing the environmental impact from production.</p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "template--16589116178675__d7e7e079-4fc1-4251-ada8-e521e4f206b0-1667500462b9b603c6-0",
+        "template--16589116178675__d7e7e079-4fc1-4251-ada8-e521e4f206b0-1667500462b9b603c6-1"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Wonder_Slumber_Website_Product_Images_9ad483f3-4bef-429e-9677-c4c71271d97f.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "9eec7afa-baa2-4b49-b9d1-7a12ccf5dfc9": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16589116178675__9eec7afa-baa2-4b49-b9d1-7a12ccf5dfc9-1667500462b9b603c6-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "What Makes Wonder Slumber’s Bamboo Sheets Different?",
+            "heading_size": "h2"
+          }
+        },
+        "template--16589116178675__9eec7afa-baa2-4b49-b9d1-7a12ccf5dfc9-1667500462b9b603c6-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Unlike other Bamboo sheets that use Viscose or Rayon Bamboo materials, our Premium Bamboo Sheet Set is made of Lyocell Bamboo that is produced utilizing non-toxic solvents and made with a unique closed loop process that recycles 99% of the processed water and overall produces less waste. </p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "template--16589116178675__9eec7afa-baa2-4b49-b9d1-7a12ccf5dfc9-1667500462b9b603c6-0",
+        "template--16589116178675__9eec7afa-baa2-4b49-b9d1-7a12ccf5dfc9-1667500462b9b603c6-1"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/path-through-bamboo-forest_644e08d9-b552-4a9c-8393-b25d4564fb13.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "a4f238f7-70a9-4e70-87bd-06fde8c4152a": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16589116178675__a4f238f7-70a9-4e70-87bd-06fde8c4152a-1667500462a344fb6f-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Artboard_14_aa90bb20-d0da-4c60-a7d7-34309542aa6b.png",
+            "title": "Superior Cooling",
+            "text": "<p>Moisture-wicking and cooling ability that can absorb excess liquid, such as sweat, as it quickly releases this for a more fresh and relaxed sleep.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16589116178675__a4f238f7-70a9-4e70-87bd-06fde8c4152a-1667500462a344fb6f-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/no-preservatives_5fa072bd-91ca-4f7b-8645-fc901213ff04.png",
+            "title": "Hypoallergenic",
+            "text": "<p>100% allergy-free because the last thing you want is to be sneezing when you’re trying to sleep!</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16589116178675__a4f238f7-70a9-4e70-87bd-06fde8c4152a-1667500462a344fb6f-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Artboard_18_e0d5ffb5-a835-4c2d-892b-b968fa1a38d8.png",
+            "title": "Sustainable",
+            "text": "<p>Made from one of the fastest-growing trees, Bamboo helps the environment by (1) not requiring excessive water, (2) being grown without pesticides, and (3) absorbing carbon emissions.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16589116178675__a4f238f7-70a9-4e70-87bd-06fde8c4152a-1667500462a344fb6f-0",
+        "template--16589116178675__a4f238f7-70a9-4e70-87bd-06fde8c4152a-1667500462a344fb6f-2",
+        "template--16589116178675__a4f238f7-70a9-4e70-87bd-06fde8c4152a-1667500462a344fb6f-1"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "6c1c9325-f7e0-42a0-a0a5-b1142d600e4c": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16589116178675__6c1c9325-f7e0-42a0-a0a5-b1142d600e4c-16675004620fbdf552-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Ready for better sleep?</p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--16589116178675__6c1c9325-f7e0-42a0-a0a5-b1142d600e4c-16675004620fbdf552-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP OUR BAMBOO SHEETS",
+            "button_link": "shopify://products/bamboo-sheets",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16589116178675__6c1c9325-f7e0-42a0-a0a5-b1142d600e4c-16675004620fbdf552-0",
+        "template--16589116178675__6c1c9325-f7e0-42a0-a0a5-b1142d600e4c-16675004620fbdf552-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "b8bb4fcd-3838-4be1-935b-93817ab2c3e0",
+    "d7e7e079-4fc1-4251-ada8-e521e4f206b0",
+    "9eec7afa-baa2-4b49-b9d1-7a12ccf5dfc9",
+    "a4f238f7-70a9-4e70-87bd-06fde8c4152a",
+    "6c1c9325-f7e0-42a0-a0a5-b1142d600e4c"
+  ]
+}

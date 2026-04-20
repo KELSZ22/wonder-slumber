@@ -1,0 +1,476 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_XbrBnc": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_TMmKU7": {
+          "type": "heading",
+          "settings": {
+            "heading": "Wake Up Pain Free Every Morning",
+            "heading_size": "h1"
+          }
+        },
+        "text_zCrYD8": {
+          "type": "text",
+          "settings": {
+            "text": "Our Wonder Pillow provides the perfect support for your neck and spine! No more tossing and turning - just pure comfort all night long.",
+            "text_style": "body"
+          }
+        },
+        "buttons_pKpHxf": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop All",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_TMmKU7",
+        "text_zCrYD8",
+        "buttons_pKpHxf"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Wonder_Pillow_Homepage_Banner.png",
+        "image_overlay_opacity": 30,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "accent-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "media_feature_ppXPaY": {
+      "type": "media-feature",
+      "blocks": {
+        "media_logo_aKNLzq": {
+          "type": "media_logo",
+          "settings": {
+            "logo": "shopify://shop_images/When_In_Manila_Logo.png",
+            "link": "https://www.wheninmanila.com/essentials-for-improved-sleep-routine/?fbclid=IwY2xjawQcvjZleHRuA2FlbQIxMABicmlkETFxZ014MG9SRlIxdTQ2VmJRc3J0YwZhcHBfaWQPNTE0NzcxNTY5MjI4MDYxAAEem26JmFzaznmUc4WW4FROhVTBLiqeGGCAjYPGJYEiSyZF5W8ye-gezDhOlLQ_aem_wyWaQfXMMi6chRzTmc75Zw#gsc.tab=0"
+          }
+        },
+        "media_logo_pptKUE": {
+          "type": "media_logo",
+          "settings": {
+            "logo": "shopify://shop_images/metro-style.png",
+            "link": "https://metro.style/wellness/health/sleep-essentials-we-love/36447"
+          }
+        },
+        "media_logo_hcjEg9": {
+          "type": "media_logo",
+          "settings": {
+            "logo": "shopify://shop_images/inquirer-lifestyle.png",
+            "link": "https://lifestyle.inquirer.net/488005/world-sleep-day-4-shops-for-your-sleep-essentials/?utm_campaign=later-linkinbio-lifestyle.inq&utm_content=later-41740617&utm_medium=social&utm_source=linkin.bio"
+          }
+        }
+      },
+      "block_order": [
+        "media_logo_aKNLzq",
+        "media_logo_pptKUE",
+        "media_logo_hcjEg9"
+      ],
+      "name": "Media Feature",
+      "settings": {
+        "heading": "As Seen On"
+      }
+    },
+    "785b7c61-90f6-47e2-8429-c6c999ffbc37": {
+      "type": "rich-text",
+      "blocks": {
+        "cf9f440e-240b-419e-8c80-e5b1ed04b555": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Why Wonder Slumber?</p>",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "cf9f440e-240b-419e-8c80-e5b1ed04b555"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "featured_icons_Ydw3BY": {
+      "type": "featured-icons",
+      "name": "Feature Badges",
+      "settings": {
+        "background_color": "#ffffff",
+        "title_color": "#1a1a1a",
+        "description_color": "#666666",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "badge_1_image": "shopify://shop_images/icon-free-shipping-resized.jpg",
+        "badge_1_title": "FREE SHIPPING",
+        "badge_1_description": "No need to pay extra for order above P2500",
+        "badge_2_image": "shopify://shop_images/icon-rating-resized.jpg",
+        "badge_2_title": "AVERAGE RATING",
+        "badge_2_description": "Have helped over 5,000+ Filipinos sleep better",
+        "badge_3_image": "shopify://shop_images/icon-cod-resized.jpg",
+        "badge_3_title": "CASH ON DELIVERY",
+        "badge_3_description": "No hassle mode of payment upon delivery",
+        "badge_4_image": "shopify://shop_images/icon-night-trial-resized.jpg",
+        "badge_4_title": "30 NIGHT TRIAL",
+        "badge_4_description": "Return the item and we'll give a full refund in store credits",
+        "badge_5_image": "shopify://shop_images/icon-hypoallergenic-resized.jpg",
+        "badge_5_title": "HYPOALLERGENIC",
+        "badge_5_description": "Materials that will give you a sneeze-free sleep"
+      }
+    },
+    "image-with-text-0": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Tired of low quality sleep? It's not your fault.",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pillows aren't one size fits all. Most pillows are not ergonomically designed to fit the needs of people who have back or neck issues, and side sleepers.</p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Artboard_1.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "accent-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Invest in your sleep now.</h2>"
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
+    "66b74c48-89cf-4d21-bdef-a57b80249337": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16589116080371__66b74c48-89cf-4d21-bdef-a57b80249337-16652856200776036c-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Wonder_Pillow_Happy_Customer_A.png",
+            "title": "Wonder Pillow",
+            "text": "<p>Orthopedic Shape and Material for Excellent support of your head and neck. Designed for people with neck and back issues.</p>",
+            "link_label": "View Product",
+            "link": "shopify://products/wonder-pillow-orthopedic-pain-free-pillow"
+          }
+        },
+        "template--16589116080371__66b74c48-89cf-4d21-bdef-a57b80249337-16652856200776036c-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Wonder_Leg_Pillow.png",
+            "title": "Leg Pillow",
+            "text": "<p>Expertly Curated for Side Sleepers. Relieve your back & hip pain due to side sleeping with our Wonder Leg Pillow!</p>",
+            "link_label": "View Product",
+            "link": "shopify://products/wonder-leg-pillow"
+          }
+        },
+        "template--16589116080371__66b74c48-89cf-4d21-bdef-a57b80249337-16652856200776036c-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/homepage-deep-sleep-resized.jpg",
+            "title": "Deep Sleep Collection",
+            "text": "<p>Fast acting natural remedies to help you fall asleep faster and wake up rested and rejuvenated</p>",
+            "link_label": "View Products",
+            "link": "shopify://collections/deep-sleep-collection"
+          }
+        },
+        "column_wixz3j": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Wonder_Slumber_Bundle.png",
+            "title": "Bundles",
+            "text": "<p>Mix and match our sleep essential & deep sleep collection best sellers. </p>",
+            "link_label": "View Products",
+            "link": "shopify://collections/bundles"
+          }
+        }
+      },
+      "block_order": [
+        "template--16589116080371__66b74c48-89cf-4d21-bdef-a57b80249337-16652856200776036c-0",
+        "template--16589116080371__66b74c48-89cf-4d21-bdef-a57b80249337-16652856200776036c-1",
+        "template--16589116080371__66b74c48-89cf-4d21-bdef-a57b80249337-16652856200776036c-2",
+        "column_wixz3j"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "df23d6a6-9a7f-4106-b032-3b3c2613ad27": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16589116080371__df23d6a6-9a7f-4106-b032-3b3c2613ad27-1665285620733ab50e-1": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>WHAT OUR HAPPY CUSTOMERS SAY ABOUT US</h3>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16589116080371__df23d6a6-9a7f-4106-b032-3b3c2613ad27-1665285620733ab50e-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "13cc9927-8b50-419e-858f-4978a0e2254a": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16589116080371__13cc9927-8b50-419e-858f-4978a0e2254a-16652856200776036c-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/happy-customer-01-resized.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16589116080371__13cc9927-8b50-419e-858f-4978a0e2254a-16652856200776036c-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/happy-customer-02-resized.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "https://www.instagram.com/p/CfOc2kcrLRD/"
+          }
+        },
+        "d5172873-f8bc-4552-977d-1f8586630b5b": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Wonder_Pillow_Happy_Customer_C.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "https://www.instagram.com/p/CdKRXwpOrYt/"
+          }
+        },
+        "template--16589116080371__13cc9927-8b50-419e-858f-4978a0e2254a-16652856200776036c-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Wonder_Pillow_Happy_Customer_B.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "https://www.instagram.com/p/CbRQA-UuxQv/"
+          }
+        }
+      },
+      "block_order": [
+        "template--16589116080371__13cc9927-8b50-419e-858f-4978a0e2254a-16652856200776036c-0",
+        "template--16589116080371__13cc9927-8b50-419e-858f-4978a0e2254a-16652856200776036c-1",
+        "d5172873-f8bc-4552-977d-1f8586630b5b",
+        "template--16589116080371__13cc9927-8b50-419e-858f-4978a0e2254a-16652856200776036c-2"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "accent-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "94bf4750-ea8b-4ef3-8198-8174cc91a95c": {
+      "type": "rich-text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "d4b2b862-a76e-41a1-8933-4a9859e2e934": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16589116080371__d4b2b862-a76e-41a1-8933-4a9859e2e934-16652856205a9d84ab-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Wonder_Pillow_Testimonial_1.png",
+            "heading": "\"It eases my neck pain and yes, works wonder!\" - Ailene",
+            "heading_size": "h2",
+            "subheading": "I must’ve enjoyed the Wonder Pillow very much :) thank you so much for having such great and affordable product! It eases my neck pain and yes, works wonder! True to it’s name. Will order one for the hubby, too!",
+            "button_label": "SHOP WONDER PILLOW",
+            "link": "shopify://products/wonder-pillow-orthopedic-pain-free-pillow",
+            "button_style_secondary": true,
+            "box_align": "middle-left",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "0815657b-32c0-403d-8da7-0a53951b7bfd": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Wonder_Leg_Pillow_Testimonial_2.png",
+            "heading": "\"AMAZING PILLOW!\" - Rosario",
+            "heading_size": "h2",
+            "subheading": "I got my leg pillow now, and I must say it has been so very useful in my sleep! No more knee joint pains, whatsoever, and I sleep soundly the moment I used it. Thank you so much, Wonder Slumber, for your quality product!",
+            "button_label": "SHOP LEG PILLOW",
+            "link": "shopify://products/wonder-leg-pillow",
+            "button_style_secondary": true,
+            "box_align": "middle-left",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "template--16589116080371__d4b2b862-a76e-41a1-8933-4a9859e2e934-16652856205a9d84ab-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Wonder_Pillow_Testimonial_2.png",
+            "heading": "\"MY NECK PAIN IS GONE!\" - Veronica",
+            "heading_size": "h2",
+            "subheading": "MY NECK PAIN IS GONE!!! Thank you so much! Been having this pain for 8 years due to heavy sling bag in college - address by muscle knot therapy then the normal pillow was contirbuting to the pain. THANK YOU SO MUCH! It has been two (2) days pain free! This means so much to me :)",
+            "button_label": "SHOP WONDER PILLOW",
+            "link": "shopify://products/wonder-pillow-orthopedic-pain-free-pillow",
+            "button_style_secondary": true,
+            "box_align": "middle-left",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "c96fab84-37c7-4c49-ab88-1cb555d5bb05": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Wonder_Leg_Pillow_Testimonial.png",
+            "heading": "\"Naging better yung sleep ko nung tinry ko yung pillow\" - Talen",
+            "heading_size": "h2",
+            "subheading": "Naging better yung sleep ko nung tinry ko yung pillow. I recommended your products to my family and friends as well since maganda naging epekto nung pillow sa sleep ko.  Once again, thank you! I appreciate your great products and customer service",
+            "button_label": "SHOP LEG PILLOW",
+            "link": "shopify://products/wonder-leg-pillow",
+            "button_style_secondary": true,
+            "box_align": "middle-left",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16589116080371__d4b2b862-a76e-41a1-8933-4a9859e2e934-16652856205a9d84ab-0",
+        "0815657b-32c0-403d-8da7-0a53951b7bfd",
+        "template--16589116080371__d4b2b862-a76e-41a1-8933-4a9859e2e934-16652856205a9d84ab-1",
+        "c96fab84-37c7-4c49-ab88-1cb555d5bb05"
+      ],
+      "settings": {
+        "layout": "grid",
+        "slide_height": "small",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 7,
+        "show_text_below": true,
+        "accessibility_info": ""
+      }
+    }
+  },
+  "order": [
+    "image_banner_XbrBnc",
+    "media_feature_ppXPaY",
+    "785b7c61-90f6-47e2-8429-c6c999ffbc37",
+    "featured_icons_Ydw3BY",
+    "image-with-text-0",
+    "rich-text",
+    "66b74c48-89cf-4d21-bdef-a57b80249337",
+    "df23d6a6-9a7f-4106-b032-3b3c2613ad27",
+    "13cc9927-8b50-419e-858f-4978a0e2254a",
+    "94bf4750-ea8b-4ef3-8198-8174cc91a95c",
+    "d4b2b862-a76e-41a1-8933-4a9859e2e934"
+  ]
+}

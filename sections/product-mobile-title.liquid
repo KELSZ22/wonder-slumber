@@ -1,0 +1,150 @@
+{% liquid
+  assign mobile_title_heading = blank
+  assign mobile_title_subheading = blank
+
+  if product
+    assign mobile_title_heading = product.metafields.custom.mobile_title_heading.value
+    assign mobile_title_subheading = product.metafields.custom.mobile_title_subheading.value
+  endif
+%}
+
+{% if mobile_title_heading != blank or mobile_title_subheading != blank %}
+  <section id="ProductMobileTitle-{{ section.id }}" class="product-mobile-title">
+    <div class="page-width">
+      <div class="product-mobile-title__inner">
+        {% if mobile_title_heading != blank %}
+          <h2 class="product-mobile-title__heading">
+            {{ mobile_title_heading | escape }}
+          </h2>
+        {% endif %}
+
+        {% if mobile_title_subheading != blank %}
+          <div class="product-mobile-title__subheading">
+            {{ mobile_title_subheading | escape | newline_to_br }}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+
+    <style>
+      #ProductMobileTitle-{{ section.id }} {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+        background: {{ section.settings.background_color }};
+      }
+
+      #ProductMobileTitle-{{ section.id }} .product-mobile-title__inner {
+        max-width: {{ section.settings.content_max_width }}px;
+      }
+
+      #ProductMobileTitle-{{ section.id }} .product-mobile-title__heading {
+        margin: 0 0 2rem;
+        color: {{ section.settings.heading_color }};
+        font-size: {{ section.settings.heading_size }}px;
+        line-height: 1.15;
+        font-weight: 700;
+        letter-spacing: 0;
+      }
+
+      #ProductMobileTitle-{{ section.id }} .product-mobile-title__subheading {
+        color: {{ section.settings.text_color }};
+        font-size: {{ section.settings.text_size }}px;
+        line-height: 1.7;
+      }
+
+      #ProductMobileTitle-{{ section.id }} .product-mobile-title__subheading strong {
+        font-weight: 700;
+      }
+
+      @media screen and (min-width: 750px) {
+        #ProductMobileTitle-{{ section.id }} {
+          display: none;
+        }
+      }
+    </style>
+  </section>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Product Mobile Title",
+  "tag": "section",
+  "class": "section",
+  "templates": ["product"],
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#f5f5f5"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#111111"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Subheading color",
+      "default": "#4b5563"
+    },
+    {
+      "type": "range",
+      "id": "content_max_width",
+      "label": "Content max width",
+      "min": 220,
+      "max": 700,
+      "step": 10,
+      "unit": "px",
+      "default": 520
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading size",
+      "min": 20,
+      "max": 42,
+      "step": 1,
+      "unit": "px",
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Subheading size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "default": 16
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Mobile Title"
+    }
+  ]
+}
+{% endschema %}

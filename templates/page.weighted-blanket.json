@@ -1,0 +1,196 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 76
+      }
+    },
+    "b8bb4fcd-3838-4be1-935b-93817ab2c3e0": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16589116178675__b8bb4fcd-3838-4be1-935b-93817ab2c3e0-16675004620fbdf552-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p><strong>Do Weighted Blankets Work?</strong></p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--16589116178675__b8bb4fcd-3838-4be1-935b-93817ab2c3e0-16675004620fbdf552-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our Weighted Blankets utilize a therapeutic technique called Deep Pressure Touch, which is the concept of applying pressure to relax the nervous system. In other words, it basically mimics the feeling of being hugged tight while sleeping.</p><p></p><p>This technique has been proven to not only induce relaxation but also lessen anxiety, ease stress, and improve the overall mood -  which all contributes to increasing one’s sleeping quality.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16589116178675__b8bb4fcd-3838-4be1-935b-93817ab2c3e0-16675004620fbdf552-0",
+        "template--16589116178675__b8bb4fcd-3838-4be1-935b-93817ab2c3e0-16675004620fbdf552-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "d7e7e079-4fc1-4251-ada8-e521e4f206b0": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16589116178675__d7e7e079-4fc1-4251-ada8-e521e4f206b0-1667500462b9b603c6-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ultimate Comfort & Luxury with Bamboo          ",
+            "heading_size": "h2"
+          }
+        },
+        "template--16589116178675__d7e7e079-4fc1-4251-ada8-e521e4f206b0-1667500462b9b603c6-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Wonder Slumber Weighted Blanket is made of Lyocell Bamboo, which is softer and silkier compared to cotton or linen. This gives both a cooler and more breathable experience for a more luxurious deep sleep.</p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "template--16589116178675__d7e7e079-4fc1-4251-ada8-e521e4f206b0-1667500462b9b603c6-0",
+        "template--16589116178675__d7e7e079-4fc1-4251-ada8-e521e4f206b0-1667500462b9b603c6-1"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Wonder_Slumber_Website_Product_Images_3.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "a4f238f7-70a9-4e70-87bd-06fde8c4152a": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16589116178675__a4f238f7-70a9-4e70-87bd-06fde8c4152a-1667500462a344fb6f-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/sleeping_00fa3a7d-672f-47e5-9c76-4d511b739398.png",
+            "title": "Induce Relaxation",
+            "text": "<p>Heavy weight of the blanket makes it harder to move around and creates the feeling of being snug and cozy which contributes to a more peaceful sleep.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16589116178675__a4f238f7-70a9-4e70-87bd-06fde8c4152a-1667500462a344fb6f-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/yoga.png",
+            "title": "Eases Stress and Lessens Anxiety",
+            "text": "<p>Releases happy hormones such as serotonin and dopamine, while lowering the stress hormone cortisol through Deep Pressure Touch.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "99fa07c8-a555-4250-a673-71e35c62bd9a": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/sleeping_1.png",
+            "title": "Improve Sleep Quality and Overall Mood",
+            "text": "<p>Wake up more refreshed by eliminating restless sleep with the increase of melatonin through Deep Pressure Touch</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16589116178675__a4f238f7-70a9-4e70-87bd-06fde8c4152a-1667500462a344fb6f-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/no-preservatives_5fa072bd-91ca-4f7b-8645-fc901213ff04.png",
+            "title": "Hypoallergenic",
+            "text": "<p>100% allergy-free because the last thing you want is to be sneezing when you’re trying to sleep!</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16589116178675__a4f238f7-70a9-4e70-87bd-06fde8c4152a-1667500462a344fb6f-0",
+        "template--16589116178675__a4f238f7-70a9-4e70-87bd-06fde8c4152a-1667500462a344fb6f-1",
+        "99fa07c8-a555-4250-a673-71e35c62bd9a",
+        "template--16589116178675__a4f238f7-70a9-4e70-87bd-06fde8c4152a-1667500462a344fb6f-2"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "6c1c9325-f7e0-42a0-a0a5-b1142d600e4c": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16589116178675__6c1c9325-f7e0-42a0-a0a5-b1142d600e4c-16675004620fbdf552-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Ready for better sleep?</p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--16589116178675__6c1c9325-f7e0-42a0-a0a5-b1142d600e4c-16675004620fbdf552-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP OUR WEIGHTED BLANKET",
+            "button_link": "shopify://products/wonder-slumber-weighted-blanket",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16589116178675__6c1c9325-f7e0-42a0-a0a5-b1142d600e4c-16675004620fbdf552-0",
+        "template--16589116178675__6c1c9325-f7e0-42a0-a0a5-b1142d600e4c-16675004620fbdf552-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "b8bb4fcd-3838-4be1-935b-93817ab2c3e0",
+    "d7e7e079-4fc1-4251-ada8-e521e4f206b0",
+    "a4f238f7-70a9-4e70-87bd-06fde8c4152a",
+    "6c1c9325-f7e0-42a0-a0a5-b1142d600e4c"
+  ]
+}

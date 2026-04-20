@@ -1,0 +1,247 @@
+{% liquid
+  assign icon_section = product.metafields.custom.section_icon_with_heading.value
+  if icon_section != blank
+    assign section_heading = icon_section.heading.value
+    assign icon_items = icon_section.icons.value
+  endif
+%}
+
+{% if icon_section != blank and icon_items != blank %}
+  <section class="section-icon-heading section-{{ section.id }}">
+    <div class="page-width">
+      {% if section_heading != blank %}
+        <div class="section-icon-heading__header">
+          <p class="section-icon-heading__title">{{ section_heading }}</p>
+        </div>
+      {% endif %}
+
+      <div class="section-icon-heading__logos">
+        {% for item in icon_items %}
+          {% assign icon_image = item.icon.value %}
+          {% assign icon_link = item.link.value %}
+          {% assign icon_alt = item.alt_text.value | default: shop.name %}
+
+          {% if icon_image != blank %}
+            {% if icon_link != blank %}
+              <a
+                href="{{ icon_link }}"
+                class="section-icon-heading__logo-link"
+                aria-label="{{ icon_alt | escape }}"
+              >
+                <img
+                  src="{{ icon_image | image_url: width: section.settings.icon_width }}"
+                  alt="{{ icon_alt | escape }}"
+                  loading="lazy"
+                  width="{{ section.settings.icon_width }}"
+                  height="auto"
+                  class="section-icon-heading__logo-image"
+                >
+              </a>
+            {% else %}
+              <div class="section-icon-heading__logo-link">
+                <img
+                  src="{{ icon_image | image_url: width: section.settings.icon_width }}"
+                  alt="{{ icon_alt | escape }}"
+                  loading="lazy"
+                  width="{{ section.settings.icon_width }}"
+                  height="auto"
+                  class="section-icon-heading__logo-image"
+                >
+              </div>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .section-{{ section.id }} {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+      background: {{ section.settings.background_color }};
+    }
+
+    .section-{{ section.id }} .section-icon-heading__header {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .section-{{ section.id }} .section-icon-heading__title {
+      margin: 0;
+      font-size: 12px;
+      line-height: 1.4;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: {{ section.settings.heading_color }};
+    }
+
+    .section-{{ section.id }} .section-icon-heading__logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: {{ section.settings.logo_gap }}px;
+    }
+
+    .section-{{ section.id }} .section-icon-heading__logo-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      line-height: 0;
+    }
+
+    .section-{{ section.id }} .section-icon-heading__logo-image {
+      display: block;
+      width: auto;
+      max-width: 100%;
+      max-height: {{ section.settings.logo_max_height }}px;
+      object-fit: contain;
+      opacity: 1;
+      transition: opacity 0.2s ease;
+    }
+
+    .section-{{ section.id }} a.section-icon-heading__logo-link:hover .section-icon-heading__logo-image {
+      opacity: 0.75;
+    }
+
+    @media screen and (max-width: 749px) {
+      .section-{{ section.id }} {
+        padding-top: {{ section.settings.padding_top_mobile }}px;
+        padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+      }
+
+      .section-{{ section.id }} .section-icon-heading__logos {
+        gap: {{ section.settings.logo_gap_mobile }}px;
+      }
+
+      .section-{{ section.id }} .section-icon-heading__title {
+        font-size: 11px;
+        letter-spacing: 0.18em;
+      }
+
+      .section-{{ section.id }} .section-icon-heading__logo-image {
+        max-height: {{ section.settings.logo_max_height_mobile }}px;
+      }
+    }
+  </style>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Section Icon with Heading",
+  "tag": "section",
+  "class": "section",
+  "templates": ["product"],
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#f5f5f5"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#111111"
+    },
+    {
+      "type": "range",
+      "id": "icon_width",
+      "min": 60,
+      "max": 400,
+      "step": 10,
+      "unit": "px",
+      "label": "Image width",
+      "default": 220
+    },
+    {
+      "type": "range",
+      "id": "logo_max_height",
+      "min": 20,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "label": "Logo max height",
+      "default": 70
+    },
+    {
+      "type": "range",
+      "id": "logo_max_height_mobile",
+      "min": 20,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Mobile logo max height",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "logo_gap",
+      "min": 8,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Desktop gap",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "logo_gap_mobile",
+      "min": 8,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Mobile gap",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Desktop top padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Desktop bottom padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Mobile top padding",
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Mobile bottom padding",
+      "default": 28
+    }
+  ],
+  "presets": [
+    {
+      "name": "Section Icon with Heading"
+    }
+  ]
+}
+{% endschema %}

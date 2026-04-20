@@ -1,0 +1,132 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 76
+      }
+    },
+    "87dce6ab-8abc-4fb5-895e-3a1f39d64f49": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16629745058035__87dce6ab-8abc-4fb5-895e-3a1f39d64f49-1665332433bb11a156-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p><strong>Size Guide Customization</strong></p>",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "template--16629745058035__87dce6ab-8abc-4fb5-895e-3a1f39d64f49-1665332433bb11a156-0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "7f9ae3bb-a8a6-4f05-8a59-2bcc8a57d91d": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16629745058035__7f9ae3bb-a8a6-4f05-8a59-2bcc8a57d91d-1665332433e499ce32-0": {
+          "type": "column",
+          "settings": {
+            "title": "Weighted Blanket (Queen)",
+            "text": "<p>Queen - 60x80 inches</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16629745058035__7f9ae3bb-a8a6-4f05-8a59-2bcc8a57d91d-1665332433e499ce32-1": {
+          "type": "column",
+          "settings": {
+            "title": "Weighted Blanket (King)",
+            "text": "<p>King - 76x80 inches</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16629745058035__7f9ae3bb-a8a6-4f05-8a59-2bcc8a57d91d-1665332433e499ce32-2": {
+          "type": "column",
+          "settings": {
+            "title": "Premium Bamboo Sheet Set (Twin/Single Set)",
+            "text": "<p>Fitted Sheet Size: 39 x 75 x 16 inches<br/>Flat Sheet Size: 68 x 98 inches<br/>Pillow Case Size: 20 x 30 inches</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "2ddaedfb-703f-44bf-8da5-cffa091298cd": {
+          "type": "column",
+          "settings": {
+            "title": "Premium Bamboo Sheet Set (Full/Double Set)",
+            "text": "<p>Fitted Sheet Size: 54 x 75 x 16 inches<br/>Flat Sheet Size: 83 x 98 inches<br/>Pillow Case Size: 20 x 30 inches<br/></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "5ae4a58f-6fa9-48f8-8d62-f89f2d285c9d": {
+          "type": "column",
+          "settings": {
+            "title": "Premium Bamboo Sheet Set (Queen Set)",
+            "text": "<p>Fitted Sheet Size: 60 x 80 x 16 inches<br/>Flat Sheet Size: 92 x 105 inches<br/>Pillow Case Size: 20 x 30 inches<br/></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "5cac9492-b7f7-43b0-8631-6a69af275231": {
+          "type": "column",
+          "settings": {
+            "title": "Premium Bamboo Sheet Set (King Set)",
+            "text": "<p>Fitted Sheet Size: 78 x 80 x 16 inches<br/>Flat Sheet Size: 110 x 105 inches<br/>Pillow Case Size: 20 x 36 inches</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16629745058035__7f9ae3bb-a8a6-4f05-8a59-2bcc8a57d91d-1665332433e499ce32-0",
+        "template--16629745058035__7f9ae3bb-a8a6-4f05-8a59-2bcc8a57d91d-1665332433e499ce32-1",
+        "template--16629745058035__7f9ae3bb-a8a6-4f05-8a59-2bcc8a57d91d-1665332433e499ce32-2",
+        "2ddaedfb-703f-44bf-8da5-cffa091298cd",
+        "5ae4a58f-6fa9-48f8-8d62-f89f2d285c9d",
+        "5cac9492-b7f7-43b0-8631-6a69af275231"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "87dce6ab-8abc-4fb5-895e-3a1f39d64f49",
+    "7f9ae3bb-a8a6-4f05-8a59-2bcc8a57d91d"
+  ]
+}

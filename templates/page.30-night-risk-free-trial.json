@@ -1,0 +1,76 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "3cc569b7-857a-4178-95d8-3e750f89debe": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/pexels-ketut-subiyanto-4473865.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 76
+      }
+    },
+    "6c1c9325-f7e0-42a0-a0a5-b1142d600e4c": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16589116178675__6c1c9325-f7e0-42a0-a0a5-b1142d600e4c-16675004620fbdf552-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Ready for better sleep?</p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--16589116178675__6c1c9325-f7e0-42a0-a0a5-b1142d600e4c-16675004620fbdf552-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP ALL",
+            "button_link": "shopify://collections/shop-all",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16589116178675__6c1c9325-f7e0-42a0-a0a5-b1142d600e4c-16675004620fbdf552-0",
+        "template--16589116178675__6c1c9325-f7e0-42a0-a0a5-b1142d600e4c-16675004620fbdf552-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "3cc569b7-857a-4178-95d8-3e750f89debe",
+    "main",
+    "6c1c9325-f7e0-42a0-a0a5-b1142d600e4c"
+  ]
+}

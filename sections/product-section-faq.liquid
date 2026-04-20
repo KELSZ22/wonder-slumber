@@ -1,0 +1,419 @@
+{% liquid
+  assign faq_section = product.metafields.custom.product_section_faq.value
+
+  if faq_section != blank
+    assign faq_heading = faq_section.heading.value
+    assign faq_items = faq_section.faq_items.value
+  endif
+%}
+
+{% if faq_section != blank and faq_items != blank %}
+  <section class="section-product-faq section-{{ section.id }}-padding {{ section.settings.color_scheme }}">
+    <div class="page-width">
+      <div class="section-product-faq__wrapper section-product-faq__wrapper--{{ section.settings.layout }}">
+        {% if faq_heading != blank %}
+          <div class="section-product-faq__header section-product-faq__header--{{ section.settings.heading_alignment }}">
+            <h2 class="section-product-faq__heading section-product-faq__heading--{{ section.settings.heading_size }}">
+              {{ faq_heading }}
+            </h2>
+          </div>
+        {% endif %}
+
+        <div class="section-product-faq__content {% if section.settings.layout == 'section' %}{{ section.settings.container_color_scheme }}{% endif %}">
+          {% for item in faq_items %}
+            {% assign question = item.question.value %}
+
+            {% if question != blank and item.answer != blank %}
+              <div class="section-product-faq__item {% if section.settings.layout == 'row' %}{{ section.settings.container_color_scheme }}{% endif %}">
+                <details
+                  class="section-product-faq__details"
+                  {% if section.settings.open_first_collapsible_row and forloop.first %}
+                    open
+                  {% endif %}
+                >
+                  <summary class="section-product-faq__summary">
+                    <span class="section-product-faq__question">{{ question }}</span>
+                    <span class="section-product-faq__icon" aria-hidden="true">
+                      <svg viewBox="0 0 12 8" fill="none">
+                        <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                  </summary>
+
+                  <div class="section-product-faq__answer rte">
+                    {{ item.answer | metafield_tag }}
+                  </div>
+                </details>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top_mobile }}px;
+      padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+    }
+
+    @media screen and (min-width: 750px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top_desktop }}px;
+        padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+      }
+    }
+
+    .section-product-faq.background-1 {
+      background: #f5f5f5;
+      color: #222222;
+    }
+
+    .section-product-faq.background-2 {
+      background: #ffffff;
+      color: #222222;
+    }
+
+    .section-product-faq.accent-1 {
+      background: #dfe8ed;
+      color: #222222;
+    }
+
+    .section-product-faq.accent-2 {
+      background: #e9ecef;
+      color: #222222;
+    }
+
+    .section-product-faq.inverse {
+      background: #222222;
+      color: #ffffff;
+    }
+
+    .section-product-faq__content.background-1,
+    .section-product-faq__item.background-1 {
+      background: #f5f5f5;
+      color: #222222;
+    }
+
+    .section-product-faq__content.background-2,
+    .section-product-faq__item.background-2 {
+      background: #ffffff;
+      color: #222222;
+    }
+
+    .section-product-faq__content.accent-1,
+    .section-product-faq__item.accent-1 {
+      background: #dfe8ed;
+      color: #222222;
+    }
+
+    .section-product-faq__content.accent-2,
+    .section-product-faq__item.accent-2 {
+      background: #e9ecef;
+      color: #222222;
+    }
+
+    .section-product-faq__content.inverse,
+    .section-product-faq__item.inverse {
+      background: #222222;
+      color: #ffffff;
+    }
+
+    .section-product-faq__header {
+      margin-bottom: 2.4rem;
+    }
+
+    .section-product-faq__header--left {
+      text-align: left;
+    }
+
+    .section-product-faq__header--center {
+      text-align: center;
+    }
+
+    .section-product-faq__header--right {
+      text-align: right;
+    }
+
+    .section-product-faq__heading {
+      margin: 0;
+      line-height: 1.2;
+    }
+
+    .section-product-faq__heading--small {
+      font-size: 2.8rem;
+    }
+
+    .section-product-faq__heading--medium {
+      font-size: 3.6rem;
+    }
+
+    .section-product-faq__heading--large {
+      font-size: 4.4rem;
+    }
+
+    .section-product-faq__wrapper--row .section-product-faq__content {
+      display: grid;
+      gap: 1.6rem;
+    }
+
+    .section-product-faq__wrapper--section .section-product-faq__content {
+      border-radius: 2.4rem;
+      overflow: hidden;
+    }
+
+    .section-product-faq__wrapper--section .section-product-faq__item + .section-product-faq__item {
+      border-top: 0.1rem solid rgba(0, 0, 0, 0.08);
+    }
+
+    .section-product-faq__wrapper--row .section-product-faq__item {
+      border-radius: 2.4rem;
+      overflow: hidden;
+    }
+
+    .section-product-faq__summary {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      cursor: pointer;
+      padding: 2rem 2.4rem;
+    }
+
+    .section-product-faq__summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .section-product-faq__question {
+      font-size: 1.7rem;
+      line-height: 1.3;
+      font-weight: 600;
+    }
+
+    .section-product-faq__icon {
+      flex: 0 0 auto;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.2s ease;
+    }
+
+    .section-product-faq__icon svg {
+      width: 1.2rem;
+      height: 0.8rem;
+      display: block;
+    }
+
+    .section-product-faq__details[open] .section-product-faq__icon {
+      transform: rotate(180deg);
+    }
+
+    .section-product-faq__answer {
+      padding: 0 2.4rem 2rem;
+    }
+
+    .section-product-faq__answer > *:first-child {
+      margin-top: 0;
+    }
+
+    .section-product-faq__answer > *:last-child {
+      margin-bottom: 0;
+    }
+
+    @media screen and (max-width: 749px) {
+      .section-product-faq__heading--small {
+        font-size: 2.2rem;
+      }
+
+      .section-product-faq__heading--medium {
+        font-size: 2.8rem;
+      }
+
+      .section-product-faq__heading--large {
+        font-size: 3.2rem;
+      }
+
+      .section-product-faq__summary {
+        padding: 1.8rem 2rem;
+      }
+
+      .section-product-faq__question {
+        font-size: 1.8rem;
+      }
+
+      .section-product-faq__answer {
+        padding: 0 2rem 1.8rem;
+      }
+    }
+  </style>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Section Product FAQ",
+  "tag": "section",
+  "class": "section",
+  "templates": ["product"],
+  "settings": [
+    {
+      "type": "select",
+      "id": "heading_size",
+      "label": "Heading size",
+      "default": "small",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ]
+    },
+    {
+      "type": "text_alignment",
+      "id": "heading_alignment",
+      "label": "Heading alignment",
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Layout",
+      "default": "row",
+      "options": [
+        {
+          "value": "row",
+          "label": "Row container"
+        },
+        {
+          "value": "section",
+          "label": "Section container"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "background-1",
+      "options": [
+        {
+          "value": "background-1",
+          "label": "Background 1"
+        },
+        {
+          "value": "background-2",
+          "label": "Background 2"
+        },
+        {
+          "value": "accent-1",
+          "label": "Accent 1"
+        },
+        {
+          "value": "accent-2",
+          "label": "Accent 2"
+        },
+        {
+          "value": "inverse",
+          "label": "Inverse"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "container_color_scheme",
+      "label": "Container color scheme",
+      "default": "accent-1",
+      "options": [
+        {
+          "value": "background-1",
+          "label": "Background 1"
+        },
+        {
+          "value": "background-2",
+          "label": "Background 2"
+        },
+        {
+          "value": "accent-1",
+          "label": "Accent 1"
+        },
+        {
+          "value": "accent-2",
+          "label": "Accent 2"
+        },
+        {
+          "value": "inverse",
+          "label": "Inverse"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "open_first_collapsible_row",
+      "label": "Open first collapsible row",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Desktop padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 36
+    },
+    {
+      "type": "header",
+      "content": "Mobile padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 24
+    }
+  ],
+  "presets": [
+    {
+      "name": "Section Product FAQ"
+    }
+  ]
+}
+{% endschema %}
