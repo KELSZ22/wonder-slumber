@@ -17,7 +17,9 @@
           "settings": {}
         }
       },
-      "block_order": ["judge_me_reviews_preview_badge_PF9dwf"],
+      "block_order": [
+        "judge_me_reviews_preview_badge_PF9dwf"
+      ],
       "custom_css": [
         ".jdgm-widget {display: block !important; padding-top: 20px; font-size: 12px;}",
         "@media (min-width: 750px) {.jdgm-widget {display: none !important; }}"
@@ -69,7 +71,12 @@
         },
         "variant_picker": {
           "type": "variant_picker",
-          "settings": {}
+          "settings": {
+            "picker_type": "button",
+            "bundle_collection_1": "bundles",
+            "bundle_collection_2": "sleep-essentials",
+            "bundle_collection_3": ""
+          }
         },
         "quantity_selector": {
           "type": "quantity_selector",
@@ -78,7 +85,7 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true
+            "show_dynamic_checkout": false
           }
         },
         "custom_payment_list_4w7C6E": {
@@ -109,12 +116,10 @@
         },
         "vairo_stock_countdown_nyDmG8": {
           "type": "shopify://apps/vairo/blocks/stock-countdown/3146741e-71a4-43d1-8174-2d896a33983f",
-          "disabled": true,
           "settings": {}
         },
         "live_visitors_counter_pvc_product_93NUmD": {
           "type": "shopify://apps/live-visitors-counter/blocks/pvc-product/4a6bd5a7-c11b-48d0-ad06-ec540fdd25e9",
-          "disabled": true,
           "settings": {}
         }
       },
@@ -168,7 +173,10 @@
           }
         }
       },
-      "block_order": ["media_logo_Fngrbr", "media_logo_EFGgyy"],
+      "block_order": [
+        "media_logo_Fngrbr",
+        "media_logo_EFGgyy"
+      ],
       "disabled": true,
       "name": "Media Feature",
       "settings": {
@@ -329,7 +337,10 @@
           }
         }
       },
-      "block_order": ["collapsible_row_y9FjRC", "collapsible_row_gqN8GF"],
+      "block_order": [
+        "collapsible_row_y9FjRC",
+        "collapsible_row_gqN8GF"
+      ],
       "disabled": true,
       "settings": {
         "caption": "",
@@ -359,7 +370,9 @@
           }
         }
       },
-      "block_order": ["judgeme_review_widget_a303aedc"],
+      "block_order": [
+        "judgeme_review_widget_a303aedc"
+      ],
       "settings": {
         "include_margins": true
       }
