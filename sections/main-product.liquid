@@ -3,15 +3,11 @@
   class="page-width section-{{ section.id }}-padding"
   data-section="{{ section.id }}"
 >
-  {% render 'hs-defer-css' with filename: 'section-main-product.css', pages: 'collection,index,product' | split: ',', local: true %}
-  {% render 'hs-defer-css' with filename: 'component-accordion.css', pages: 'collection,index,product' | split: ',', local: true %}
-  {% render 'hs-defer-css' with filename: 'component-price.css', pages: 'collection,index,product' | split: ',', local: true %}
-  {% render 'hs-defer-css' with filename: 'component-rte.css', pages: 'collection,index,product' | split: ',', local: true %}
-  {% render 'hs-defer-css' with filename: 'component-slider.css', pages: 'collection,index,product' | split: ',', local: true %}
-  {% render 'hs-defer-css' with filename: 'component-rating.css', pages: 'collection,index,product' | split: ',', local: true %}
-  {% render 'hs-defer-css' with filename: 'component-loading-overlay.css', pages: 'collection,index,product' | split: ',', local: true %}
-  {% render 'hs-defer-css' with filename: 'component-deferred-media.css', pages: 'collection,index,product' | split: ',', local: true %}
-  {% render 'hs-defer-css' with filename: 'cro-overrides.css', pages: 'collection,index,product' | split: ',', local: true %}
+  {% render 'hs-defer-css' with filename: 'section-main-product.css', pages: 'product' | split: ',', local: true %}
+  {% render 'hs-defer-css' with filename: 'component-accordion.css', pages: 'product' | split: ',', local: true %}
+  {% render 'hs-defer-css' with filename: 'component-price.css', pages: 'product' | split: ',', local: true %}
+  {% render 'hs-defer-css' with filename: 'component-slider.css', pages: 'product' | split: ',', local: true %}
+  {% render 'hs-defer-css' with filename: 'cro-overrides.css', pages: 'product' | split: ',', local: true %}
 
   {%- style -%}
     .section-{{ section.id }}-padding {
@@ -132,11 +128,11 @@
                 >
                   {%- liquid
                     assign media_position = media_position | default: 0 | plus: 1
-                    assign lazy_load = false
+                    assign lazy_load = true
                     if media_position > 1
                       assign lazy_load = true
                     endif
-                    render 'product-thumbnail', fetchpriority: 'high', loading: 'eager', preload: true, decoding: 'sync', media: media, media_count: media_count, position: media_position, desktop_layout: section.settings.gallery_layout, mobile_layout: section.settings.mobile_thumbnails, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true, media_width: media_width, lazy_load: lazy_load
+                    render 'product-thumbnail', media: media, media_count: media_count, position: media_position, desktop_layout: section.settings.gallery_layout, mobile_layout: section.settings.mobile_thumbnails, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true, media_width: media_width, lazy_load: lazy_load
                   -%}
                 </li>
               {%- endunless -%}

@@ -109,10 +109,12 @@
         },
         "vairo_stock_countdown_nyDmG8": {
           "type": "shopify://apps/vairo/blocks/stock-countdown/3146741e-71a4-43d1-8174-2d896a33983f",
+          "disabled": true,
           "settings": {}
         },
         "live_visitors_counter_pvc_product_93NUmD": {
           "type": "shopify://apps/live-visitors-counter/blocks/pvc-product/4a6bd5a7-c11b-48d0-ad06-ec540fdd25e9",
+          "disabled": true,
           "settings": {}
         }
       },
@@ -181,7 +183,7 @@
         "heading_color": "#111111",
         "icon_width": 220,
         "logo_max_height": 70,
-        "logo_max_height_mobile": 50,
+        "logo_max_height_mobile": 68,
         "logo_gap": 40,
         "logo_gap_mobile": 20,
         "padding_top": 40,
