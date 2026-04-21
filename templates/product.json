@@ -68,7 +68,7 @@
           }
         },
         "variant_picker": {
-          "type": "custom_bundle_selector",
+          "type": "variant_picker",
           "settings": {}
         },
         "quantity_selector": {
@@ -78,7 +78,7 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": false
+            "show_dynamic_checkout": true
           }
         },
         "custom_payment_list_4w7C6E": {

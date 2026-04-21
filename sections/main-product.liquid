@@ -376,12 +376,40 @@
               {{ block.settings.custom_liquid }}
               
             {%- when 'collapsible_tab' -%}
-              {%- assign why_choose_heading = product.metafields.custom.why_choose_this_bundle -%}
-              {%- assign why_choose_answer = product.metafields.custom.why_choose_this_bundle_answer_content -%}
-              {%- assign bundle_inclusion_heading = product.metafields.custom.bundle_inclusion_question -%}
-              {%- assign bundle_inclusion_answer = product.metafields.custom.bundle_inclusion_answer_content -%}
+              {%- assign is_bundle_product = false -%}
+              {%- for block in section.blocks -%}
+                {%- if block.type == 'variant_picker' -%}
+                  {%- if block.settings.bundle_collection_1 != blank -%}
+                    {%- for collection in product.collections -%}
+                      {%- if collection.id == collections[block.settings.bundle_collection_1].id -%}
+                        {%- assign is_bundle_product = true -%}
+                      {%- endif -%}
+                    {%- endfor -%}
+                  {%- endif -%}
+                  {%- if block.settings.bundle_collection_2 != blank -%}
+                    {%- for collection in product.collections -%}
+                      {%- if collection.id == collections[block.settings.bundle_collection_2].id -%}
+                        {%- assign is_bundle_product = true -%}
+                      {%- endif -%}
+                    {%- endfor -%}
+                  {%- endif -%}
+                  {%- if block.settings.bundle_collection_3 != blank -%}
+                    {%- for collection in product.collections -%}
+                      {%- if collection.id == collections[block.settings.bundle_collection_3].id -%}
+                        {%- assign is_bundle_product = true -%}
+                      {%- endif -%}
+                    {%- endfor -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endfor -%}
 
-              {%- if why_choose_heading != blank and why_choose_answer != blank -%}
+              {%- if is_bundle_product -%}
+                {%- assign why_choose_heading = product.metafields.custom.why_choose_this_bundle -%}
+                {%- assign why_choose_answer = product.metafields.custom.why_choose_this_bundle_answer_content -%}
+                {%- assign bundle_inclusion_heading = product.metafields.custom.bundle_inclusion_question -%}
+                {%- assign bundle_inclusion_answer = product.metafields.custom.bundle_inclusion_answer_content -%}
+
+                {%- if why_choose_heading != blank and why_choose_answer != blank -%}
                 <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
                   <details id="Details-{{ block.id }}-{{ section.id }}-why-choose">
                     <summary>
@@ -426,6 +454,13 @@
                     </div>
                   </details>
                 </div>
+              {%- endif -%}
+              {%- else -%}
+                {%- if product.description != blank -%}
+                  <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
+                    {{ product.description }}
+                  </div>
+                {%- endif -%}
               {%- endif -%}
 
               {%- if block.settings.heading != blank -%}
@@ -542,6 +577,32 @@
               </share-button>
               <script defer src="{{ 'share.min.js' | asset_url }}"></script>
             {%- when 'variant_picker' -%}
+              {%- assign is_bundle_product = false -%}
+              {%- if block.settings.bundle_collection_1 != blank -%}
+                {%- for collection in product.collections -%}
+                  {%- if collection.id == collections[block.settings.bundle_collection_1].id -%}
+                    {%- assign is_bundle_product = true -%}
+                  {%- endif -%}
+                {%- endfor -%}
+              {%- endif -%}
+              {%- if block.settings.bundle_collection_2 != blank -%}
+                {%- for collection in product.collections -%}
+                  {%- if collection.id == collections[block.settings.bundle_collection_2].id -%}
+                    {%- assign is_bundle_product = true -%}
+                  {%- endif -%}
+                {%- endfor -%}
+              {%- endif -%}
+              {%- if block.settings.bundle_collection_3 != blank -%}
+                {%- for collection in product.collections -%}
+                  {%- if collection.id == collections[block.settings.bundle_collection_3].id -%}
+                    {%- assign is_bundle_product = true -%}
+                  {%- endif -%}
+                {%- endfor -%}
+              {%- endif -%}
+
+              {%- if is_bundle_product -%}
+                {% render 'bundle-selector', product: product %}
+              {%- else -%}
               {%- unless product.has_only_default_variant -%}
                 {%- if block.settings.picker_type == 'button' -%}
                   <variant-radios
@@ -615,6 +676,7 @@
                   </variant-selects>
                 {%- endif -%}
               {%- endunless -%}
+              {%- endif -%}
 
               <!-- NEW: Bundle Selector -->
               {% when 'custom_bundle_selector' %}
@@ -1320,6 +1382,21 @@
           ],
           "default": "button",
           "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.label"
+        },
+        {
+          "type": "collection",
+          "id": "bundle_collection_1",
+          "label": "Bundle collection 1"
+        },
+        {
+          "type": "collection",
+          "id": "bundle_collection_2",
+          "label": "Bundle collection 2"
+        },
+        {
+          "type": "collection",
+          "id": "bundle_collection_3",
+          "label": "Bundle collection 3"
         }
       ]
     },
