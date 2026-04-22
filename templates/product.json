@@ -211,6 +211,9 @@
     },
     "product_accordion_image_metafield_hfiAJr": {
       "type": "product-accordion-image-metafield",
+      "custom_css": [
+        ".collapsible-content__grid--reverse {padding-bottom: 24px;}"
+      ],
       "name": "Ingredient accordions",
       "settings": {
         "caption": "",

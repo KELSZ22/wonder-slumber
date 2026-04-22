@@ -18,15 +18,6 @@
       {% endif %}
 
       <div class="product-video-testimonial__slider-wrap">
-        <button
-          type="button"
-          class="product-video-testimonial__arrow product-video-testimonial__arrow--prev"
-          aria-label="Previous videos"
-          data-slider-prev
-        >
-          &lt;
-        </button>
-
         <div class="product-video-testimonial__viewport" data-slider-viewport>
           <div class="product-video-testimonial__track" data-slider-track>
             {% for item in video_links %}
@@ -61,6 +52,17 @@
             {% endfor %}
           </div>
         </div>
+      </div>
+
+      <div class="product-video-testimonial__nav" data-slider-nav>
+        <button
+          type="button"
+          class="product-video-testimonial__arrow product-video-testimonial__arrow--prev"
+          aria-label="Previous videos"
+          data-slider-prev
+        >
+          &lt;
+        </button>
 
         <button
           type="button"
@@ -116,10 +118,7 @@
       }
 
       #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__slider-wrap {
-        display: grid;
-        grid-template-columns: auto 1fr auto;
-        align-items: center;
-        gap: 12px;
+        display: block;
       }
 
       #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__viewport {
@@ -163,6 +162,18 @@
         display: block;
       }
 
+      #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__nav {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        margin-top: 18px;
+        margin-bottom: 10px;
+      }
+
+      #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__nav.is-visible {
+        display: flex;
+      }
+
       #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__arrow {
         width: 36px;
         height: 36px;
@@ -172,13 +183,9 @@
         font-size: 20px;
         line-height: 1;
         cursor: pointer;
-        display: none;
+        display: inline-flex;
         align-items: center;
         justify-content: center;
-      }
-
-      #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__arrow.is-visible {
-        display: inline-flex;
       }
 
       #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__arrow.is-disabled {
@@ -191,7 +198,7 @@
         justify-content: center;
         align-items: center;
         gap: 10px;
-        margin-top: 20px;
+        margin-top: 0;
       }
 
       #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__dots.is-visible {
@@ -234,10 +241,6 @@
         #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__heading--large {
           font-size: 3.4rem;
         }
-
-        #ProductVideoTestimonial-{{ section.id }} .product-video-testimonial__slider-wrap {
-          grid-template-columns: 1fr;
-        }
       }
     </style>
 
@@ -251,6 +254,7 @@
         const prevBtn = section.querySelector('[data-slider-prev]');
         const nextBtn = section.querySelector('[data-slider-next]');
         const dotsWrap = section.querySelector('[data-slider-dots]');
+        const navWrap = section.querySelector('[data-slider-nav]');
 
         if (!viewport || items.length === 0) return;
 
@@ -293,8 +297,7 @@
           const currentPage = Math.min(getCurrentPage(), Math.max(pageCount - 1, 0));
           const hasSlider = items.length > perView;
 
-          prevBtn.classList.toggle('is-visible', hasSlider);
-          nextBtn.classList.toggle('is-visible', hasSlider);
+          navWrap.classList.toggle('is-visible', hasSlider);
           dotsWrap.classList.toggle('is-visible', hasSlider);
 
           prevBtn.classList.toggle('is-disabled', currentPage <= 0);
