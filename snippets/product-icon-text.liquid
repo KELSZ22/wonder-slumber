@@ -1,0 +1,92 @@
+{% liquid
+  assign icon = product.metafields.custom.product_icon_text_icon.value
+  assign heading = product.metafields.custom.product_icon_text_heading.value
+  assign subtext = product.metafields.custom.product_icon_text_subtext.value
+  assign alt_text = heading | default: product.title
+%}
+
+{% if icon != blank or heading != blank or subtext != blank %}
+  <style>
+    .product-icon-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 10px;
+      padding: 22px 18px;
+      margin: 16px 0;
+      border-radius: 16px;
+    }
+
+    .product-icon-text__icon {
+      width: 72px;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .product-icon-text__icon img {
+      width: 72px;
+      height: 72px;
+      object-fit: contain;
+      display: block;
+    }
+
+    .product-icon-text__heading {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.2;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    .product-icon-text__subtext {
+      margin: 0;
+      font-size: 12px;
+      line-height: 1.5;
+      color: rgba(0, 0, 0, 0.72);
+    }
+
+    @media screen and (max-width: 749px) {
+      .product-icon-text {
+        padding: 18px 14px;
+      }
+
+      .product-icon-text__heading {
+        font-size: 1.7rem;
+      }
+
+      .product-icon-text__subtext {
+        font-size: 1.35rem;
+      }
+    }
+  </style>
+
+  <div class="product-icon-text" {{ block.shopify_attributes }}>
+    {% if icon != blank %}
+      <div class="product-icon-text__icon">
+        {{
+          icon
+          | image_url: width: 144
+          | image_tag:
+            loading: 'lazy',
+            widths: '72,96,144',
+            alt: alt_text,
+            class: 'product-icon-text__image'
+        }}
+      </div>
+    {% endif %}
+
+    {% if heading != blank %}
+      <h3 class="product-icon-text__heading">{{ heading }}</h3>
+    {% endif %}
+
+    {% if subtext != blank %}
+      <p class="product-icon-text__subtext">{{ subtext }}</p>
+    {% endif %}
+  </div>
+{% endif %}

@@ -111,6 +111,12 @@
           "type": "shopify://apps/live-visitors-counter/blocks/pvc-product/4a6bd5a7-c11b-48d0-ad06-ec540fdd25e9",
           "settings": {}
         },
+        "custom_liquid_XE8t3E": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'custom-accordion' %}"
+          }
+        },
         "product_icon_text_WDemwd": {
           "type": "product_icon_text",
           "settings": {}
@@ -139,6 +145,7 @@
         "text_Gg7LAk",
         "1ee38753-5729-4115-896b-a3fd4aceaa19",
         "vairo_stock_countdown_nyDmG8",
+        "custom_liquid_XE8t3E",
         "product_icon_text_WDemwd",
         "collapsible_tab_LxcgYL"
       ],
@@ -291,6 +298,20 @@
         "padding_bottom_mobile": 24
       }
     },
+    "product_testimonial_slider_dFYjJn": {
+      "type": "product-testimonial-slider",
+      "name": "Testimonial Slider",
+      "settings": {
+        "desktop_height": 460,
+        "mobile_image_height": 300,
+        "section_background": "#ffffff",
+        "card_background": "#efefef",
+        "heading_color": "#171717",
+        "text_color": "#656565",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
     "product_section_faq_rc3WRb": {
       "type": "product-section-faq",
       "name": "Section Product FAQ",
@@ -305,20 +326,6 @@
         "padding_bottom_desktop": 36,
         "padding_top_mobile": 24,
         "padding_bottom_mobile": 24
-      }
-    },
-    "product_testimonial_slider_dFYjJn": {
-      "type": "product-testimonial-slider",
-      "name": "Testimonial Slider",
-      "settings": {
-        "desktop_height": 460,
-        "mobile_image_height": 300,
-        "section_background": "#ffffff",
-        "card_background": "#efefef",
-        "heading_color": "#171717",
-        "text_color": "#656565",
-        "padding_top": 40,
-        "padding_bottom": 40
       }
     },
     "collapsible_content_TqtdLB": {

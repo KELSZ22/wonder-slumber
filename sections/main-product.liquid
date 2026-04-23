@@ -374,7 +374,8 @@
               {%- endif -%}
             {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}
-              
+              {%- when 'product_icon_text' -%}
+            {% render 'product-icon-text', product: product, block: block %}
             {%- when 'collapsible_tab' -%}
               {%- assign is_bundle_product = false -%}
               {%- for block in section.blocks -%}
@@ -1422,6 +1423,11 @@
         }
       ]
     },
+    {
+  "type": "product_icon_text",
+  "name": "Product icon text",
+  "limit": 1
+},
     {
       "type": "description",
       "name": "t:sections.main-product.blocks.description.name",
