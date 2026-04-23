@@ -17,7 +17,9 @@
           "settings": {}
         }
       },
-      "block_order": ["judge_me_reviews_preview_badge_PF9dwf"],
+      "block_order": [
+        "judge_me_reviews_preview_badge_PF9dwf"
+      ],
       "custom_css": [
         ".jdgm-widget {display: block !important; padding-top: 20px; font-size: 12px;}",
         "@media (min-width: 750px) {.jdgm-widget {display: none !important; }}"
@@ -64,7 +66,6 @@
           "type": "price",
           "settings": {}
         },
-
         "dd9bda99-15c4-4ddc-ac48-f8a276a6d037": {
           "type": "custom_liquid",
           "settings": {
@@ -105,6 +106,12 @@
           "type": "description",
           "settings": {}
         },
+        "1ee38753-5729-4115-896b-a3fd4aceaa19": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div data-id=\"60342077899708\"></div>"
+          }
+        },
         "vairo_stock_countdown_nyDmG8": {
           "type": "shopify://apps/vairo/blocks/stock-countdown/3146741e-71a4-43d1-8174-2d896a33983f",
           "settings": {}
@@ -130,9 +137,8 @@
         }
       },
       "block_order": [
-        "judgeme_preview_badge_product_page_40f65dad",
-        "live_visitors_counter_pvc_product_93NUmD",
         "vairo_countdown_timer_product_zmnx3E",
+        "judgeme_preview_badge_product_page_40f65dad",
         "title",
         "price",
         "dd9bda99-15c4-4ddc-ac48-f8a276a6d037",
@@ -140,8 +146,10 @@
         "quantity_selector",
         "buy_buttons",
         "custom_payment_list_4w7C6E",
+        "live_visitors_counter_pvc_product_93NUmD",
         "text_Gg7LAk",
         "description",
+        "1ee38753-5729-4115-896b-a3fd4aceaa19",
         "vairo_stock_countdown_nyDmG8",
         "custom_liquid_XE8t3E",
         "product_icon_text_WDemwd",
@@ -181,7 +189,10 @@
           }
         }
       },
-      "block_order": ["media_logo_Fngrbr", "media_logo_EFGgyy"],
+      "block_order": [
+        "media_logo_Fngrbr",
+        "media_logo_EFGgyy"
+      ],
       "disabled": true,
       "name": "Media Feature",
       "settings": {
@@ -203,15 +214,6 @@
         "padding_bottom": 40,
         "padding_top_mobile": 28,
         "padding_bottom_mobile": 28
-      }
-    },
-    "product_icon_text_metafield_RPMxEJ": {
-      "type": "product-icon-text-metafield",
-      "name": "Product icon metaobject",
-      "settings": {
-        "color_scheme": "background-1",
-        "padding_top": 40,
-        "padding_bottom": 52
       }
     },
     "product_accordion_image_metafield_hfiAJr": {
@@ -253,6 +255,15 @@
         "padding_bottom_desktop": 0,
         "padding_top_mobile": 0,
         "padding_bottom_mobile": 0
+      }
+    },
+    "product_icon_text_metafield_RPMxEJ": {
+      "type": "product-icon-text-metafield",
+      "name": "Product icon metaobject",
+      "settings": {
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "product_image_text_group_R9GDET": {
@@ -348,7 +359,10 @@
           }
         }
       },
-      "block_order": ["collapsible_row_y9FjRC", "collapsible_row_gqN8GF"],
+      "block_order": [
+        "collapsible_row_y9FjRC",
+        "collapsible_row_gqN8GF"
+      ],
       "disabled": true,
       "settings": {
         "caption": "",
@@ -378,7 +392,9 @@
           }
         }
       },
-      "block_order": ["judgeme_review_widget_a303aedc"],
+      "block_order": [
+        "judgeme_review_widget_a303aedc"
+      ],
       "settings": {
         "include_margins": true
       }
