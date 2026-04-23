@@ -1,0 +1,269 @@
+{%- liquid
+  assign has_content = false
+
+  for i in (1..4)
+    assign q_key = 'accordion_question_' | append: i
+    assign a_key = 'accordion_answer_' | append: i
+    assign question = product.metafields.custom[q_key].value
+    assign answer = product.metafields.custom[a_key].value
+    if question != blank and answer != blank
+      assign has_content = true
+    endif
+  endfor
+-%}
+
+{%- if has_content -%}
+<div class="accordion-section" id="accordion-section-{{ section.id }}">
+  {%- for i in (1..4) -%}
+    {%- liquid
+      assign q_key = 'accordion_question_' | append: i
+      assign a_key = 'accordion_answer_' | append: i
+      assign question = product.metafields.custom[q_key].value
+      assign answer = product.metafields.custom[a_key].value
+    -%}
+    {%- if question != blank and answer != blank -%}
+      <div class="accordion-item">
+        <button
+          class="accordion-trigger"
+          aria-expanded="false"
+          aria-controls="accordion-panel-{{ section.id }}-{{ i }}"
+          id="accordion-btn-{{ section.id }}-{{ i }}"
+          type="button"
+        >
+          <span class="accordion-question">{{ question }}</span>
+          <span class="accordion-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </button>
+        <div
+          class="accordion-panel"
+          id="accordion-panel-{{ section.id }}-{{ i }}"
+          role="region"
+          aria-labelledby="accordion-btn-{{ section.id }}-{{ i }}"
+          hidden
+        >
+          <div class="accordion-answer">
+            {%- if answer.type == 'root' -%}
+              {%- for child in answer.children -%}
+                {%- if child.type == 'paragraph' -%}
+                  <p>
+                    {%- for text_child in child.children -%}
+                      {%- if text_child.type == 'text' -%}
+                        {{ text_child.value }}
+                      {%- endif -%}
+                    {%- endfor -%}
+                  </p>
+                {%- endif -%}
+              {%- endfor -%}
+            {%- else -%}
+              {{ answer | newline_to_br }}
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+    {%- endif -%}
+  {%- endfor -%}
+</div>
+
+<style>
+  .accordion-section {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    font-family: inherit;
+    border-top: 1px solid #d9d9d9;
+  }
+
+  .accordion-item {
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  .accordion-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 18px 0;
+    cursor: pointer;
+    text-align: left;
+    gap: 16px;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  .accordion-trigger:focus-visible {
+    outline: 2px solid #000;
+    outline-offset: 2px;
+  }
+
+  .accordion-question {
+    font-family: 'Inter', sans-serif;
+    font-size: 17.6px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    color: #1a1a1a;
+    line-height: 1.4;
+  }
+
+  .accordion-icon {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1F1F1FBF;
+    transition: transform 0.3s ease;
+  }
+
+  .accordion-trigger[aria-expanded="true"] .accordion-icon {
+    transform: rotate(180deg);
+  }
+
+  .accordion-panel[hidden] {
+    display: none;
+  }
+
+  .accordion-panel.is-animating {
+    display: block;
+    overflow: hidden;
+  }
+
+  .accordion-answer {
+    font-family: 'Inter', sans-serif;
+    font-size: 17.6px;
+    line-height: 1.7;
+    color: #1F1F1FBF;
+    padding: 0 0 20px 0;
+    max-width: 600px;
+  }
+
+  .accordion-answer br {
+    display: block;
+    content: "";
+    margin-top: 0.4em;
+  }
+
+  @media screen and (max-width: 768px) {
+    .accordion-section {
+      max-width: 100%;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
+    .accordion-trigger {
+      padding: 16px 0;
+    }
+
+    .accordion-question {
+      font-size: 10px;
+      letter-spacing: 0.1em;
+    }
+
+    .accordion-icon {
+      font-size: 16px;
+      width: 18px;
+      height: 18px;
+    }
+
+    .accordion-answer {
+      font-size: 13px;
+      padding: 0 0 16px 0;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .accordion-section {
+      padding: 0 16px;
+    }
+
+    .accordion-trigger {
+      padding: 14px 0;
+    }
+
+    .accordion-question {
+      font-size: 10px;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    var section = document.getElementById('accordion-section-{{ section.id }}');
+    if (!section) return;
+
+    var triggers = section.querySelectorAll('.accordion-trigger');
+
+    function animateOpen(panel) {
+      panel.removeAttribute('hidden');
+      panel.classList.add('is-animating');
+      var height = panel.scrollHeight;
+      panel.style.maxHeight = '0px';
+      panel.style.opacity = '0';
+      panel.style.transition = 'max-height 0.3s ease, opacity 0.25s ease';
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+          panel.style.maxHeight = height + 'px';
+          panel.style.opacity = '1';
+        });
+      });
+      panel.addEventListener('transitionend', function handler() {
+        panel.style.maxHeight = '';
+        panel.style.transition = '';
+        panel.classList.remove('is-animating');
+        panel.removeEventListener('transitionend', handler);
+      });
+    }
+
+    function animateClose(panel) {
+      panel.classList.add('is-animating');
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+      panel.style.opacity = '1';
+      panel.style.transition = 'max-height 0.3s ease, opacity 0.25s ease';
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+          panel.style.maxHeight = '0px';
+          panel.style.opacity = '0';
+        });
+      });
+      panel.addEventListener('transitionend', function handler() {
+        panel.setAttribute('hidden', '');
+        panel.style.maxHeight = '';
+        panel.style.opacity = '';
+        panel.style.transition = '';
+        panel.classList.remove('is-animating');
+        panel.removeEventListener('transitionend', handler);
+      });
+    }
+
+    triggers.forEach(function (trigger) {
+      trigger.addEventListener('click', function () {
+        var expanded = trigger.getAttribute('aria-expanded') === 'true';
+        var panelId = trigger.getAttribute('aria-controls');
+        var panel = document.getElementById(panelId);
+
+        triggers.forEach(function (otherTrigger) {
+          if (otherTrigger !== trigger && otherTrigger.getAttribute('aria-expanded') === 'true') {
+            otherTrigger.setAttribute('aria-expanded', 'false');
+            var otherId = otherTrigger.getAttribute('aria-controls');
+            var otherPanel = document.getElementById(otherId);
+            if (otherPanel) animateClose(otherPanel);
+          }
+        });
+
+        if (expanded) {
+          trigger.setAttribute('aria-expanded', 'false');
+          animateClose(panel);
+        } else {
+          trigger.setAttribute('aria-expanded', 'true');
+          animateOpen(panel);
+        }
+      });
+    });
+  })();
+</script>
+{%- endif -%}

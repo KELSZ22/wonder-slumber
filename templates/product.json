@@ -17,7 +17,9 @@
           "settings": {}
         }
       },
-      "block_order": ["judge_me_reviews_preview_badge_PF9dwf"],
+      "block_order": [
+        "judge_me_reviews_preview_badge_PF9dwf"
+      ],
       "custom_css": [
         ".jdgm-widget {display: block !important; padding-top: 20px; font-size: 12px;}",
         "@media (min-width: 750px) {.jdgm-widget {display: none !important; }}"
@@ -43,6 +45,10 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "live_visitors_counter_pvc_product_93NUmD": {
+          "type": "shopify://apps/live-visitors-counter/blocks/pvc-product/4a6bd5a7-c11b-48d0-ad06-ec540fdd25e9",
+          "settings": {}
+        },
         "vairo_countdown_timer_product_zmnx3E": {
           "type": "shopify://apps/vairo/blocks/countdown-timer-product/3146741e-71a4-43d1-8174-2d896a33983f",
           "disabled": true,
@@ -107,9 +113,11 @@
           "type": "shopify://apps/vairo/blocks/stock-countdown/3146741e-71a4-43d1-8174-2d896a33983f",
           "settings": {}
         },
-        "live_visitors_counter_pvc_product_93NUmD": {
-          "type": "shopify://apps/live-visitors-counter/blocks/pvc-product/4a6bd5a7-c11b-48d0-ad06-ec540fdd25e9",
-          "settings": {}
+        "custom_liquid_XE8t3E": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'custom-accordion' %}"
+          }
         },
         "product_icon_text_WDemwd": {
           "type": "product_icon_text",
@@ -139,6 +147,7 @@
         "text_Gg7LAk",
         "1ee38753-5729-4115-896b-a3fd4aceaa19",
         "vairo_stock_countdown_nyDmG8",
+        "custom_liquid_XE8t3E",
         "product_icon_text_WDemwd",
         "collapsible_tab_LxcgYL"
       ],
@@ -154,7 +163,7 @@
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
-        "padding_top": 0,
+        "padding_top": 20,
         "padding_bottom": 40
       }
     },
@@ -176,7 +185,10 @@
           }
         }
       },
-      "block_order": ["media_logo_Fngrbr", "media_logo_EFGgyy"],
+      "block_order": [
+        "media_logo_Fngrbr",
+        "media_logo_EFGgyy"
+      ],
       "disabled": true,
       "name": "Media Feature",
       "settings": {
@@ -291,6 +303,20 @@
         "padding_bottom_mobile": 24
       }
     },
+    "product_testimonial_slider_dFYjJn": {
+      "type": "product-testimonial-slider",
+      "name": "Testimonial Slider",
+      "settings": {
+        "desktop_height": 460,
+        "mobile_image_height": 300,
+        "section_background": "#ffffff",
+        "card_background": "#efefef",
+        "heading_color": "#171717",
+        "text_color": "#656565",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
     "product_section_faq_rc3WRb": {
       "type": "product-section-faq",
       "name": "Section Product FAQ",
@@ -305,20 +331,6 @@
         "padding_bottom_desktop": 36,
         "padding_top_mobile": 24,
         "padding_bottom_mobile": 24
-      }
-    },
-    "product_testimonial_slider_dFYjJn": {
-      "type": "product-testimonial-slider",
-      "name": "Testimonial Slider",
-      "settings": {
-        "desktop_height": 460,
-        "mobile_image_height": 300,
-        "section_background": "#ffffff",
-        "card_background": "#efefef",
-        "heading_color": "#171717",
-        "text_color": "#656565",
-        "padding_top": 40,
-        "padding_bottom": 40
       }
     },
     "collapsible_content_TqtdLB": {
@@ -343,7 +355,10 @@
           }
         }
       },
-      "block_order": ["collapsible_row_y9FjRC", "collapsible_row_gqN8GF"],
+      "block_order": [
+        "collapsible_row_y9FjRC",
+        "collapsible_row_gqN8GF"
+      ],
       "disabled": true,
       "settings": {
         "caption": "",
@@ -373,7 +388,9 @@
           }
         }
       },
-      "block_order": ["judgeme_review_widget_a303aedc"],
+      "block_order": [
+        "judgeme_review_widget_a303aedc"
+      ],
       "settings": {
         "include_margins": true
       }
