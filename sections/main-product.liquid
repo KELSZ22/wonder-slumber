@@ -367,7 +367,7 @@
                 {%- endform -%}
               </div>
             {%- when 'description' -%}
-              {%- if product.description != blank -%}
+              {%- if product.metafields.custom.show_description.value and product.description != blank -%}
                 <div class="product__description rte quick-add-hidden">
                   {{ product.description }}
                 </div>
