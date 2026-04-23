@@ -17,7 +17,9 @@
           "settings": {}
         }
       },
-      "block_order": ["judge_me_reviews_preview_badge_PF9dwf"],
+      "block_order": [
+        "judge_me_reviews_preview_badge_PF9dwf"
+      ],
       "custom_css": [
         ".jdgm-widget {display: block !important; padding-top: 20px; font-size: 12px;}",
         "@media (min-width: 750px) {.jdgm-widget {display: none !important; }}"
@@ -26,36 +28,18 @@
         "include_margins": true
       }
     },
-    "rich_text_rEtJVw": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_7Qitqt": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Wonder Leg Pillow® Pain Relief Pillow - Perfect for Side-Sleeper, Wake Up Pain-Free</p>",
-            "heading_size": "h2"
-          }
-        },
-        "text_g94cYz": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>Why do you wake up more tired than before you slept? </strong>Because your body is fighting gravity instead of resting.</p>"
-          }
-        }
-      },
-      "block_order": ["heading_7Qitqt", "text_g94cYz"],
-      "custom_css": [
-        ".rich-text__wrapper {width: 100%; display: block !important; font-size: 12px;}",
-        "@media (min-width: 750px) {.rich-text__wrapper {display: none !important; }}"
-      ],
-      "name": "t:sections.rich-text.presets.name",
+    "product_mobile_title_wyFXRh": {
+      "type": "product-mobile-title",
+      "name": "Product Mobile Title",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "left",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 20,
-        "padding_bottom": 20
+        "background_color": "#ffffff",
+        "heading_color": "#111111",
+        "text_color": "#4b5563",
+        "content_max_width": 520,
+        "heading_size": 33,
+        "text_size": 16,
+        "padding_top": 16,
+        "padding_bottom": 0
       }
     },
     "main": {
@@ -88,7 +72,10 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "button"
+            "picker_type": "button",
+            "bundle_collection_1": "bundles",
+            "bundle_collection_2": "sleep-essentials",
+            "bundle_collection_3": ""
           }
         },
         "quantity_selector": {
@@ -118,39 +105,12 @@
             "custom_liquid": "<div data-id=\"60342077899708\"></div>"
           }
         },
-        "collapsible_tab_DMGDrH": {
+        "collapsible_tab_LxcgYL": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Are you a side-sleeper?",
-            "icon": "none",
-            "content": "<p>If you're a side sleeper, you don't sleep perfectly straight. Your hip joints twist and there's pressure on your back when one leg drops in front of the other. This can cause back & hip pain in the long run, or you even might be experiencing this already!</p>",
-            "page": ""
-          }
-        },
-        "collapsible_tab_dDVtat": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Why Use the Wonder Leg Pillow?",
-            "icon": "none",
-            "content": "<ul><li>Orthopedic Shape and Material</li><li>Excellent Support of Hip, Back, Leg & Knee</li><li>High Quality Premium Memory Foam</li><li>Hypoallergenic</li></ul>",
-            "page": ""
-          }
-        },
-        "collapsible_tab_XbCRzQ": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "The Wonder Leg Pillow Will Help You",
-            "icon": "none",
-            "content": "<ul><li>Fall Asleep Faster</li><li>Stay Asleep Longer</li><li>Stop Hip Pain</li><li>Stop Back Pain</li><li>Improve Posture</li><li>Wake Up Happier</li></ul>",
-            "page": ""
-          }
-        },
-        "collapsible_tab_BwBf7d": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Product Details",
-            "icon": "none",
-            "content": "<ul><li>100% Cotton Cover</li><li>Pillow Size: 25x26x15 cm</li><li>Pillow Material: Memory Foam</li></ul>",
+            "heading": "",
+            "icon": "check_mark",
+            "content": "",
             "page": ""
           }
         },
@@ -175,10 +135,7 @@
         "custom_payment_list_4w7C6E",
         "text_Gg7LAk",
         "1ee38753-5729-4115-896b-a3fd4aceaa19",
-        "collapsible_tab_DMGDrH",
-        "collapsible_tab_dDVtat",
-        "collapsible_tab_XbCRzQ",
-        "collapsible_tab_BwBf7d",
+        "collapsible_tab_LxcgYL",
         "vairo_stock_countdown_nyDmG8",
         "live_visitors_counter_pvc_product_93NUmD"
       ],
@@ -216,281 +173,214 @@
           }
         }
       },
-      "block_order": ["media_logo_Fngrbr", "media_logo_EFGgyy"],
+      "block_order": [
+        "media_logo_Fngrbr",
+        "media_logo_EFGgyy"
+      ],
+      "disabled": true,
       "name": "Media Feature",
       "settings": {
         "heading": "As Seen On"
       }
     },
-    "wonder_slumber_comparison_6GiDxJ": {
-      "type": "wonder-slumber-comparison",
-      "name": "Wonder Slumber Comparison",
+    "product_section_icon_with_heading_E6tMWw": {
+      "type": "product-section-icon-with-heading",
+      "name": "Section Icon with Heading",
       "settings": {
-        "heading": "A Must-Have For Side-Sleepers",
-        "comparison_image": "shopify://shop_images/before-after-leg-pillow.jpg",
-        "rating_text": "⭐️⭐️⭐️⭐️⭐️ Rated 5.0 by 5609+ Happy Sleepers",
-        "button_link": "",
-        "button_text": "ADD TO CART →",
-        "background_color": "#b1cfd7"
+        "background_color": "#ffffff",
+        "heading_color": "#111111",
+        "icon_width": 220,
+        "logo_max_height": 70,
+        "logo_max_height_mobile": 68,
+        "logo_gap": 40,
+        "logo_gap_mobile": 20,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
       }
     },
-    "cf29cd15-3404-4444-ae07-9e02a719aa4d": {
-      "type": "custom-liquid",
+    "product_icon_text_metafield_RPMxEJ": {
+      "type": "product-icon-text-metafield",
+      "name": "Product icon metaobject",
       "settings": {
-        "custom_liquid": "<div data-id=\"6034ae1acdd0a0\"></div>",
         "color_scheme": "background-1",
-        "padding_top": 12,
-        "padding_bottom": 12
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
-    "004958c6-e84a-43bb-bda3-fd8b47dd36b0": {
-      "type": "rich-text",
-      "blocks": {
-        "2be160db-a681-4c05-af03-e637b571be39": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>What makes our Wonder Leg Pillow special?</p>",
-            "heading_size": "h2"
-          }
-        }
-      },
-      "block_order": ["2be160db-a681-4c05-af03-e637b571be39"],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 12,
-        "padding_bottom": 12
-      }
-    },
-    "21bd70a2-f9b4-4497-8157-f149bfbd51a6": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--16589116047603__21bd70a2-f9b4-4497-8157-f149bfbd51a6-168849739980c9fe49-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Orthopedic Alignment & Posture Support",
-            "heading_size": "h2"
-          }
-        },
-        "template--16589116047603__21bd70a2-f9b4-4497-8157-f149bfbd51a6-168849739980c9fe49-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>Naturally aligns the back, hips, legs, and knees</strong> to alleviate discomfort and reduce back & hip pain. </p>",
-            "text_style": "subtitle"
-          }
-        }
-      },
-      "block_order": [
-        "template--16589116047603__21bd70a2-f9b4-4497-8157-f149bfbd51a6-168849739980c9fe49-0",
-        "template--16589116047603__21bd70a2-f9b4-4497-8157-f149bfbd51a6-168849739980c9fe49-1"
+    "product_accordion_image_metafield_hfiAJr": {
+      "type": "product-accordion-image-metafield",
+      "custom_css": [
+        ".collapsible-content__grid--reverse {padding-bottom: 24px;}"
       ],
+      "name": "Ingredient accordions",
       "settings": {
-        "image": "shopify://shop_images/29_83eff53e-18c5-4b31-a55d-76b0805f032a.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
+        "caption": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "section_bg_color": "#e7f0f4",
+        "inner_container_bg_color": "#f3f4f5",
+        "heading_color": "#1f2328",
+        "text_color": "#5f6368",
+        "border_color": "#d6d9dd",
+        "container_radius": 24,
+        "open_first_collapsible_row": true,
+        "image_ratio": "large",
+        "desktop_layout": "image_second",
         "padding_top": 36,
-        "padding_bottom": 12
-      }
-    },
-    "2caaa134-db7c-402e-ace4-2121a7d0d5ad": {
-      "type": "image-with-text",
-      "blocks": {
-        "96d61ec7-42b0-470e-a3e2-8e838b7b6d6c": {
-          "type": "heading",
-          "settings": {
-            "heading": "Knee Cushion",
-            "heading_size": "h2"
-          }
-        },
-        "55597036-1c3d-44bd-865a-90bfb367fa30": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Provides excellent knee support to <strong>eliminate this bone on bone discomfort</strong>. </p>",
-            "text_style": "subtitle"
-          }
-        }
-      },
-      "block_order": [
-        "96d61ec7-42b0-470e-a3e2-8e838b7b6d6c",
-        "55597036-1c3d-44bd-865a-90bfb367fa30"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Website_Square_Images_cd1c1492-f64a-464a-9cfa-7fb80da23088.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 12
-      }
-    },
-    "61dc50bc-6ca3-463d-a1ea-e6bd8e785b90": {
-      "type": "image-with-text",
-      "blocks": {
-        "b1a691fb-536f-4c33-a8a7-8d3d84023381": {
-          "type": "heading",
-          "settings": {
-            "heading": "Premium Memory Foam w/ Ergonomic Shape",
-            "heading_size": "h2"
-          }
-        },
-        "2ce53187-fafc-4314-80f3-4b0ce2988cc3": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Designed with an <strong>ergonomic crescent shape</strong> with <strong>smooth & rounded edges. </strong></p>",
-            "text_style": "subtitle"
-          }
-        }
-      },
-      "block_order": [
-        "b1a691fb-536f-4c33-a8a7-8d3d84023381",
-        "2ce53187-fafc-4314-80f3-4b0ce2988cc3"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/31_0bedbf9e-9270-4c3a-86cf-be3c2ae1e387.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 0,
         "padding_bottom": 36
       }
     },
-    "f4f9be1d-f07a-4e3d-86ad-8c10dfcb9543": {
-      "type": "rich-text",
-      "blocks": {
-        "template--16589116047603__f4f9be1d-f07a-4e3d-86ad-8c10dfcb9543-168736796512ed9030-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Testimonials</p>",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "template--16589116047603__f4f9be1d-f07a-4e3d-86ad-8c10dfcb9543-168736796512ed9030-0"
+    "product_image_with_rating_YcVmEA": {
+      "type": "product-image-with-rating",
+      "custom_css": [
+        ".product-image-with-rating__inner {padding: 0 !important;}"
       ],
+      "name": "Product Image with Rating",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 12,
-        "padding_bottom": 12
+        "image_max_width": 1200,
+        "image_radius": 20,
+        "section_gap": 32,
+        "heading_color": "#111111",
+        "footer_color": "#111111",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
       }
     },
-    "7c4c8f23-f9d4-471a-954e-7b6d5608a64e": {
-      "type": "custom-liquid",
-      "custom_css": [],
+    "product_image_text_group_R9GDET": {
+      "type": "product-image-text-group",
+      "name": "Product Image Text Group",
       "settings": {
-        "custom_liquid": "{% render 'video-slideshow-legpillow-snippet' %}",
-        "color_scheme": "background-1",
-        "padding_top": 40,
-        "padding_bottom": 12
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 36,
+        "padding_top_mobile": 24,
+        "padding_bottom_mobile": 24
       }
     },
-    "27715e50-f77c-431a-91d4-149d27819b1e": {
-      "type": "rich-text",
-      "blocks": {
-        "92433692-1bc8-4277-ab86-b27daf1d2ecb": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Our Happy Customers</p>",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": ["92433692-1bc8-4277-ab86-b27daf1d2ecb"],
+    "product_video_testimonial_nn6BpQ": {
+      "type": "product-video-testimonial",
+      "name": "Product Video Testimonial",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "accent-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 12
+        "heading": "Testimonials",
+        "heading_size": "medium",
+        "padding_top_desktop": 36,
+        "padding_bottom_desktop": 36,
+        "padding_top_mobile": 24,
+        "padding_bottom_mobile": 24
       }
     },
-    "49b945a9-41c9-4ea7-91db-29ab60b8aa5e": {
-      "type": "multicolumn",
-      "blocks": {
-        "template--16589116047603__49b945a9-41c9-4ea7-91db-29ab60b8aa5e-168322786804f5bc02-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/1_191621cf-4a41-43b1-915f-390b9e6ff9f3.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--16589116047603__49b945a9-41c9-4ea7-91db-29ab60b8aa5e-168322786804f5bc02-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/7_7c3e29ca-bd0e-42c5-9a96-02efcfb34d55.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "c7f05be8-806e-46e8-9a43-17411a1570a1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/5_a81eb0e9-dffd-45b4-bc40-576e2a5d64c1.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--16589116047603__49b945a9-41c9-4ea7-91db-29ab60b8aa5e-168322786804f5bc02-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/2_042dbb5f-efab-4a21-9fd0-8d5c71b1809b.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16589116047603__49b945a9-41c9-4ea7-91db-29ab60b8aa5e-168322786804f5bc02-0",
-        "template--16589116047603__49b945a9-41c9-4ea7-91db-29ab60b8aa5e-168322786804f5bc02-1",
-        "c7f05be8-806e-46e8-9a43-17411a1570a1",
-        "template--16589116047603__49b945a9-41c9-4ea7-91db-29ab60b8aa5e-168322786804f5bc02-2"
-      ],
+    "product_image_testimonial_mCHEyY": {
+      "type": "product-image-testimonial",
+      "name": "Product Image Testimonial",
       "settings": {
-        "title": "",
-        "heading_size": "h2",
+        "heading": "Our Happy Customers",
+        "heading_size": "medium",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 4,
         "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "accent-1",
+        "secondary_background": "none",
         "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "enable_swipe_on_mobile": false,
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 36,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 24
+      }
+    },
+    "product_section_faq_rc3WRb": {
+      "type": "product-section-faq",
+      "name": "Section Product FAQ",
+      "settings": {
+        "heading_size": "small",
+        "heading_alignment": "center",
+        "layout": "row",
+        "color_scheme": "background-2",
+        "container_color_scheme": "accent-1",
+        "open_first_collapsible_row": false,
+        "padding_top_desktop": 36,
+        "padding_bottom_desktop": 36,
+        "padding_top_mobile": 24,
+        "padding_bottom_mobile": 24
+      }
+    },
+    "product_testimonial_slider_dFYjJn": {
+      "type": "product-testimonial-slider",
+      "name": "Testimonial Slider",
+      "settings": {
+        "desktop_height": 460,
+        "mobile_image_height": 300,
+        "section_background": "#ffffff",
+        "card_background": "#efefef",
+        "heading_color": "#171717",
+        "text_color": "#656565",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "collapsible_content_TqtdLB": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_y9FjRC": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does the Wonder Leg Pillow work for back and side sleepers?",
+            "icon": "none",
+            "row_content": "<p>Yes, the Wonder Leg Pillow is ideal for side sleepers, offering spinal and hip alignment when placed between the knees during sleep. However, back sleepers can also benefit by positioning it under their knees for extra support at night.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_gqN8GF": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "I've used many pillows for back and hip pain and remain doubtful. How can I be sure this one will be effective for me?",
+            "icon": "none",
+            "row_content": "<p>We're confident that the Wonder Leg Pillow is the best solution for hip pain relief and will improve your sleep, which is why we offer a 30-night risk-free trial. If you don't experience a noticeable difference within this period, you can return it for a full refund, no questions asked!</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_y9FjRC",
+        "collapsible_row_gqN8GF"
+      ],
+      "disabled": true,
+      "settings": {
+        "caption": "",
+        "heading": "FAQs",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "row",
+        "color_scheme": "background-1",
+        "container_color_scheme": "accent-1",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "judgeme_section_review_widget_827e": {
+      "type": "apps",
+      "blocks": {
+        "judgeme_review_widget_a303aedc": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "real_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judgeme_review_widget_a303aedc"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "product-recommendations": {
@@ -513,19 +403,20 @@
   },
   "order": [
     "17459024312538e081",
-    "rich_text_rEtJVw",
+    "product_mobile_title_wyFXRh",
     "main",
     "media_feature_AGPRWF",
-    "wonder_slumber_comparison_6GiDxJ",
-    "cf29cd15-3404-4444-ae07-9e02a719aa4d",
-    "004958c6-e84a-43bb-bda3-fd8b47dd36b0",
-    "21bd70a2-f9b4-4497-8157-f149bfbd51a6",
-    "2caaa134-db7c-402e-ace4-2121a7d0d5ad",
-    "61dc50bc-6ca3-463d-a1ea-e6bd8e785b90",
-    "f4f9be1d-f07a-4e3d-86ad-8c10dfcb9543",
-    "7c4c8f23-f9d4-471a-954e-7b6d5608a64e",
-    "27715e50-f77c-431a-91d4-149d27819b1e",
-    "49b945a9-41c9-4ea7-91db-29ab60b8aa5e",
+    "product_section_icon_with_heading_E6tMWw",
+    "product_icon_text_metafield_RPMxEJ",
+    "product_accordion_image_metafield_hfiAJr",
+    "product_image_with_rating_YcVmEA",
+    "product_image_text_group_R9GDET",
+    "product_video_testimonial_nn6BpQ",
+    "product_image_testimonial_mCHEyY",
+    "product_section_faq_rc3WRb",
+    "product_testimonial_slider_dFYjJn",
+    "collapsible_content_TqtdLB",
+    "judgeme_section_review_widget_827e",
     "product-recommendations"
   ]
 }

@@ -25,14 +25,15 @@
     class="product-image-text-group section-{{ section.id }}-padding"
     style="background: {{ section_background }};"
   >
-    <div class="page-width">
-      {% if section_heading != blank %}
+          {% if section_heading != blank %}
         <div class="product-image-text-group__header">
           <h2 class="product-image-text-group__heading">
             {{ section_heading }}
           </h2>
         </div>
       {% endif %}
+
+    <div class="page-width">
 
       {% if single_image_only %}
         {% assign single_image = first_item.image.value %}
@@ -139,6 +140,9 @@
         margin: 0;
         font-size: 3.2rem;
         line-height: 1.15;
+        background-color: #e7f0f4;
+        padding-top: 14px;
+        padding-bottom: 14px;
       }
 
       .product-image-text-group__rows {
