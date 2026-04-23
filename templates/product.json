@@ -66,10 +66,9 @@
         },
 
         "dd9bda99-15c4-4ddc-ac48-f8a276a6d037": {
-          "type": "text",
+          "type": "custom_liquid",
           "settings": {
-            "text": "\"I thought lower back ngalay was just the tax you paid for being a side sleeper. Wonder Leg Pillow showed me I could keep my favorite position without the painful fee.\" - Diana, 29, Marketing Specialist",
-            "text_style": "body"
+            "custom_liquid": "{% if product.metafields.custom.product_description.value %}<p class=\"product__text\">{{ product.metafields.custom.product_description.value }}</p>{% endif %}"
           }
         },
         "variant_picker": {
@@ -105,12 +104,6 @@
         "description": {
           "type": "description",
           "settings": {}
-        },
-        "1ee38753-5729-4115-896b-a3fd4aceaa19": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<div data-id=\"60342077899708\"></div>"
-          }
         },
         "vairo_stock_countdown_nyDmG8": {
           "type": "shopify://apps/vairo/blocks/stock-countdown/3146741e-71a4-43d1-8174-2d896a33983f",
@@ -149,7 +142,6 @@
         "custom_payment_list_4w7C6E",
         "text_Gg7LAk",
         "description",
-        "1ee38753-5729-4115-896b-a3fd4aceaa19",
         "vairo_stock_countdown_nyDmG8",
         "custom_liquid_XE8t3E",
         "product_icon_text_WDemwd",
@@ -415,9 +407,9 @@
     "main",
     "media_feature_AGPRWF",
     "product_section_icon_with_heading_E6tMWw",
-    "product_icon_text_metafield_RPMxEJ",
     "product_accordion_image_metafield_hfiAJr",
     "product_image_with_rating_YcVmEA",
+    "product_icon_text_metafield_RPMxEJ",
     "product_image_text_group_R9GDET",
     "product_video_testimonial_nn6BpQ",
     "product_image_testimonial_mCHEyY",
