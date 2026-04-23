@@ -5,7 +5,7 @@
     assign q_key = 'accordion_question_' | append: i
     assign a_key = 'accordion_answer_' | append: i
     assign question = product.metafields.custom[q_key].value
-    assign answer = product.metafields.custom[a_key].value
+    assign answer = product.metafields.custom[a_key]
     if question != blank and answer != blank
       assign has_content = true
     endif
@@ -19,7 +19,7 @@
       assign q_key = 'accordion_question_' | append: i
       assign a_key = 'accordion_answer_' | append: i
       assign question = product.metafields.custom[q_key].value
-      assign answer = product.metafields.custom[a_key].value
+      assign answer = product.metafields.custom[a_key]
     -%}
     {%- if question != blank and answer != blank -%}
       <div class="accordion-item">
@@ -45,21 +45,7 @@
           hidden
         >
           <div class="accordion-answer">
-            {%- if answer.type == 'root' -%}
-              {%- for child in answer.children -%}
-                {%- if child.type == 'paragraph' -%}
-                  <p>
-                    {%- for text_child in child.children -%}
-                      {%- if text_child.type == 'text' -%}
-                        {{ text_child.value }}
-                      {%- endif -%}
-                    {%- endfor -%}
-                  </p>
-                {%- endif -%}
-              {%- endfor -%}
-            {%- else -%}
-              {{ answer | newline_to_br }}
-            {%- endif -%}
+            {{ answer | metafield_tag }}
           </div>
         </div>
       </div>
